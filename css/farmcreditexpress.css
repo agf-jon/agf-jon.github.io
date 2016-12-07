@@ -177,7 +177,6 @@ small.subheading a {
 
 .navbar-brand > img {
   max-width: 250px;
-  padding-top: 10px;
 }
 
 /* Change colors */
@@ -200,6 +199,7 @@ small.subheading a {
 
   .navbar-brand > img {
     max-width: 300px;
+    padding-top: 10px;
   }
 
   .navbar-nav > li > a {
