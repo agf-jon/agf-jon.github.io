@@ -183,6 +183,11 @@ small.subheading a {
     padding-top: 10px;
   }
 }
+@media (max-width: 768px) {
+  .navbar-brand > img {
+    padding-top: 10px;
+  }
+}
 
 /* Change colors */
 .navbar-default .navbar-toggle {
