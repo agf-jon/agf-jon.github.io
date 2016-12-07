@@ -398,6 +398,9 @@ small.subheading a {
     font-size: 32px;
   }
 }
+.section__hero .hero-heading--dealer {
+  text-align: center;
+}
 .section__about .about__box {
   background-color: #623d2d;
   border: 2px solid #c3daae;
