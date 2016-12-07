@@ -317,7 +317,7 @@ small.subheading a {
   background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.67);
   background-blend-mode: overlay;
   min-height: 600px;
   padding-top: 120px;
@@ -357,7 +357,7 @@ small.subheading a {
   padding-top: 4rem;
   text-align: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .section__hero .hero-heading {
     padding-top: 0;
     margin-bottom: 40px;
@@ -380,10 +380,11 @@ small.subheading a {
 .section__hero .hero-heading h2 {
   color: #c3daae;
   font-weight: 400;
-  font-size: 50px;
-  font-size: 5rem;
+  font-size: 40px;
+  font-size: 4rem;
   margin-bottom: 40px;
   margin-bottom: 4rem;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .section__hero .hero-heading h2 {
