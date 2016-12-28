@@ -1,0 +1,129 @@
+[
+    {
+        "age": 0, 
+        "id": "aiken-sc",
+        "city": "Aiken",
+        "state":"SC",
+        "imageUrl": "img/officers/aiken-sc.jpg", 
+        "name": "Paula Blackwell", 
+        "nmls": "",
+        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    }, 
+    {
+        "age": 1, 
+        "id": "anderson-sc", 
+        "imageUrl": "img/officers/anderson-sc.jpg", 
+        "name": "Christy Ross", 
+        "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    }, 
+    {
+        "age": 2, 
+        "carrier": "AT&T", 
+        "id": "batesburg-sc", 
+        "imageUrl": "img/officers/batesburg-sc.jpg", 
+        "name": "John Wight", 
+        "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartofficer."
+    }, 
+    {
+        "age": 3, 
+        "id": "baxley-ga", 
+        "imageUrl": "img/officers/baxley-ga.jpg", 
+        "name": "Cae Hutchinson", 
+        "snippet": "Introducing Dell\u2122 Streak 7. Share photos, videos and movies together. It\u2019s small enough to carry around, big enough to gather around."
+    }, 
+    {
+        "age": 4, 
+        "carrier": "Cellular South", 
+        "id": "blackshear-ga", 
+        "imageUrl": "img/officers/blackshear-ga.jpg", 
+        "name": "Chris Shimkus", 
+        "snippet": "The Samsung Gem\u2122 brings you everything that you would expect and more from a touch display smart officer \u2013 more apps, more features and a more affordable price."
+    }, 
+    {
+        "age": 5, 
+        "carrier": "Dell", 
+        "id": "carrollton-ga", 
+        "imageUrl": "img/officers/carrollton-ga.jpg", 
+        "name": "Alice Nelson", 
+        "snippet": "The Dell Venue; Your Personal Express Lane to Everything"
+    }, 
+    {
+        "age": 6, 
+        "carrier": "Best Buy", 
+        "id": "douglas-ga", 
+        "imageUrl": "img/officers/douglas-ga.jpg", 
+        "name": "Jessica Frost", 
+        "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first officer to run Gingerbread (Android 2.3), the fastest version of Android yet."
+    }, 
+    {
+        "age": 7, 
+        "carrier": "Cellular South", 
+        "id": "griffin-ga", 
+        "imageUrl": "img/officers/griffin-ga.jpg", 
+        "name": "Wanda Smith", 
+        "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens"
+    }, 
+    {
+        "age": 8, 
+        "id": "laurens-sc", 
+        "imageUrl": "img/officers/laurens-sc.jpg", 
+        "name": "Elizabeth Robertson", 
+        "snippet": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122 brings you an ultra-mobile entertainment experience through its 7\u201d display, high-power processor and Adobe\u00ae Flash\u00ae Player compatibility."
+    }, 
+    {
+        "age": 9, 
+        "carrier": "Cellular South", 
+        "id": "madison-ga", 
+        "imageUrl": "img/officers/madison-ga.jpg", 
+        "name": "Kellie Conway", 
+        "snippet": "The Samsung Showcase\u2122 delivers a cinema quality experience like you\u2019ve never seen before. Its innovative 4\u201d touch display technology provides rich picture brilliance, even outdoors"
+    }, 
+    {
+        "age": 10, 
+        "carrier": "Verizon", 
+        "id": "rockhill-sc", 
+        "imageUrl": "img/officers/rockhill-sc.jpg", 
+        "name": "Alex Stull", 
+        "snippet": "The first smartofficer with a 1.2 GHz processor and global capabilities."
+    }, 
+    {
+        "age": 11, 
+        "carrier": "Verizon", 
+        "id": "spartanburg-sc", 
+        "imageUrl": "img/officers/spartanburg-sc.jpg", 
+        "name": "Gwen Cooper", 
+        "snippet": "The next generation of DOES."
+    }, 
+    {
+        "age": 12, 
+        "carrier": "AT&T", 
+        "id": "statesboro-ga", 
+        "imageUrl": "img/officers/statesboro-ga.jpg", 
+        "name": "Cindy Claxton", 
+        "snippet": "An experience to cheer about."
+    }, 
+    {
+        "age": 13, 
+        "carrier": "T-Mobile", 
+        "id": "statesboro-ga-1", 
+        "imageUrl": "img/officers/statesboro-ga-1.jpg", 
+        "name": "Kelsey Johnson", 
+        "snippet": "Are you ready for everything life throws your way?"
+    }, 
+    {
+        "age": 14, 
+        "carrier": "T-Mobile", 
+        "id": "summerville-sc", 
+        "imageUrl": "img/officers/summerville-sc.jpg", 
+        "name": "Justin McClure", 
+        "snippet": "The T-Mobile myTouch 4G is a premium smartofficer designed to deliver blazing fast 4G speeds so that you can video chat from practically anywhere, with or without Wi-Fi."
+    }, 
+    {
+        "age": 15, 
+        "carrier": "US Cellular", 
+        "id": "vidalia-ga", 
+        "imageUrl": "img/officers/vidalia-ga.jpg", 
+        "name": "Melissa Williamson", 
+        "snippet": "The Samsung Mesmerize\u2122 delivers a cinema quality experience like you\u2019ve never seen before. Its innovative 4\u201d touch display technology provides rich picture brilliance,even outdoors"
+    }
+]

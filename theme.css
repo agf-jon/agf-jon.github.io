@@ -1,0 +1,244 @@
+/* New Styles */
+
+body {
+	padding: 0;
+	font-size: 18px;
+	color: #555;
+}
+
+main {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+a,
+.color {
+	color: rgb(0, 153, 101);
+}
+
+.color-light {
+	color: rgba(0,153,101, 0.5);
+}
+
+a:hover {
+	text-decoration: none;
+	color: #009470;
+}
+
+body,
+input,
+nav {
+	font-family: "Futura PT";
+}
+
+/* Nav */
+.navbar-fixed-top {
+	border-width: 0;
+}
+.navbar-brand {
+    height: 72px;
+    padding: 10px;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+.nav-callout {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    line-height: 20px;
+    padding-right: 30px;
+    padding-left: 15px;
+}
+
+.navbar-nav>li>.nav-phone,
+.navbar-nav>li>a.nav-phone
+ {
+	background-color: #009965;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.navbar-nav>li>.nav-phone:hover,
+.navbar-nav>li>a:hover.nav-phone
+ {
+	background-color: #555;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	/* Desktop Nav Only */
+	.navbar-nav>li>a {
+	    padding-top: 26px;
+	    padding-bottom: 26px;
+	}
+
+	.nav-callout {
+		padding-top: 26px;
+		padding-bottom: 26px;
+	}
+}
+
+@media (max-width: 768px) {
+	/* Mobile Nav Only */
+	.navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar-collapse {
+		padding: 0;
+		text-align: center;
+	}
+}
+
+/* Header */
+header {
+	padding-top: 72px;
+}
+
+/* Hero */
+.hero {
+	background-image: url("img/hero.jpg");
+	background-size: cover;
+	min-height: 250px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.hero .cta {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+.hero h1 {
+	border-bottom: none;
+	color: #fff;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer a {
+	color: #009965;
+}
+
+
+/* Officer Listing */
+.thumbnail {
+	min-height: 140px;
+	padding: 15px 10px;
+}
+
+.thumbnail p {
+	font-size: 14px;
+}
+
+.thumb {
+	margin: 0.25em 1em 0.25em 0.25em;
+}
+
+.thumb img {
+	width: 100px;
+	height: auto;
+}
+
+
+/* Officer Details */
+.content {
+	margin-bottom: 1em;
+}
+
+.content h1 {
+	color: #009965;
+	font-weight: 700;
+}
+
+.content .subhead {
+	color: #bfbfbf;
+	font-style: italic;
+}
+
+.content .box ul {
+	font-size: 15px;
+}
+
+.content .featured ul {
+	font-size: 20px;
+}
+
+/** Sidebar */
+.sidebar .officer {
+	width: 100px;
+	height: auto;
+	padding: 0;
+	margin-right: 0.25em;
+	-webkit-box-shadow: -1px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	z-index: moz-box-shadow:    -1px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         -1px 2px 3px 0px rgba(50, 50, 50, 0.75);
+}
+
+.sidebar .officer-images {
+	background-color: transparent;
+}
+
+.siderbar .officer-contact {
+	font-size: 15px;
+}
+
+.sidebar .officer-contact h3 {
+	margin-top: 0;
+}
+
+.sidebar .widget {
+	background-color: #f5f5f5;
+	padding: 1em 0.75em;
+}
+
+.sidebar .widget .email-cta {
+	background-color: #009965;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 20px;
+	display: block;
+	margin: 0 auto;
+	padding: 26px 0;
+	text-align: center;
+}
+
+.sidebar .widget .email-cta:hover {
+	background-color: #555;
+}
+
+.sidebar h4 {
+	padding: 0.5em 1em;
+	background-color: #555;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sidebar .officer-quote {
+	padding: 0;
+}
+
+.sidebar blockquote {
+	color: #fff;
+	clear: both;
+	border-left: 5px solid #009965;
+}

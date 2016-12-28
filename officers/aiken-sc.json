@@ -1,0 +1,24 @@
+{
+    "id": "aiken-sc", 
+    "images": [
+        "img/officers/aiken-sc.jpg"
+    ],
+    "imageUrl": "img/officers/aiken-sc.jpg",
+    "name": {
+        "first": "Paula",
+        "last": "Blackwell"
+    },
+    "location": {
+        "address": "951 E. Pine Log Rd., PO Box 5489",
+        "city": "Aiken",
+        "state":"SC",
+        "zip":"29804-5489"
+    },
+    "contact": {
+        "phone": "803-648-6818",
+        "extension": "x8113",
+        "fax": "803-648-8315",
+        "email": "pblackwell@agsouthfc.com"
+    },
+    "nmls": "450510"
+}
