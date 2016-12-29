@@ -1,35 +1,225 @@
-<!doctype html>
-<html lang="en" ng-app="officercatApp">
-  <head>
-    <meta charset="utf-8">
-    <title>AgSouth Mortages</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="app.css" />
-    <!--<link rel="stylesheet" href="app.animations.css" />-->
-    <link rel="stylesheet" href="theme.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
-    <script src="app.animations.js"></script>
-    <script src="core/core.module.js"></script>
-    <script src="core/checkmark/checkmark.filter.js"></script>
-    <script src="core/officer/officer.module.js"></script>
-    <script src="core/officer/officer.service.js"></script>
-    <script src="officer-list/officer-list.module.js"></script>
-    <script src="officer-list/officer-list.component.js"></script>
-    <script src="officer-detail/officer-detail.module.js"></script>
-    <script src="officer-detail/officer-detail.component.js"></script>
-  </head>
-  <body>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Farm Credit EXPRESS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/project.css" rel="stylesheet">
+
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/pxf5kex.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Font Awesome -->
+    <link href="/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <!--<nav class="navbar navbar-default navbar-fixed-top" role="navigation">-->
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="img-responsive" src="/images/logo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-callout">Call today for a <strong class="green">FREE PREQUALIFICATION</strong> and a consultation</li>
+            <!--<li><a href="tel:+{{$ctrl.officer.phone}}">{{$ctrl.officer.contact.phone}}</a></li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+        <!-- About Section -->
+    <header>
+      <div class="hero">
+        <div class="cta">
+          <h1>Get A Mortgage Today</h1>
+          <h3>WE SPECIALIZE IN HOMES WITH LARGE ACREAGE FOR YOUR DREAM HOME OUT IN THE COUNTRY!</h3>
+        </div>
+      </div>
+    </header>
   <!-- Fixed navbar -->
 
-    <div ng-view class="view-frame"></div>
+    <main id="content" class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/aiken-sc.html" class="thumb">
+                  <img alt="Paula Blackwell" src="images/officers/aiken-sc.jpg">
+                </a>
+                <a href="officers/aiken-sc.html"><h3>Paula Blackwell</h3></a>
+                <p><strong>Aiken, SC</strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/anderson-sc.html" class="thumb">
+                  <img alt="Christy Ross" src="images/officers/anderson-sc.jpg">
+                </a>
+                <a href="officers/anderson-sc.html"><h3>Christy Ross</h3></a>
+                <p><strong>Anderson, SC </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/batesburg-sc.html" class="thumb">
+                  <img alt="John Wight" src="images/officers/batesburg-sc.jpg">
+                </a>
+                <a href="officers/batesburg-sc.html"><h3>John Wight</h3></a>
+                <p><strong>Batesburg, SC </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/baxley-ga.html" class="thumb">
+                  <img alt="Cae Hutchinson" src="images/officers/baxley-ga.jpg">
+                </a>
+                <a href="officers/baxley-ga.html"><h3>Cae Hutchinson</h3></a>
+                <p><strong>Baxley, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/blackshear-ga.html" class="thumb">
+                  <img alt="Chris Shimkus" src="images/officers/blackshear-ga.jpg">
+                </a>
+                <a href="officers/blackshear-ga.html"><h3>Chris Shimkus</h3></a>
+                <p><strong>Blackshear, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/carrollton-ga.html" class="thumb">
+                  <img alt="Alice Nelson" src="images/officers/carrollton-ga.jpg">
+                </a>
+                <a href="officers/carrollton-ga.html"><h3>Alice Nelson</h3></a>
+                <p><strong>Carrollton, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/douglas-ga.html" class="thumb">
+                  <img alt="Jessica Frost" src="images/officers/douglas-ga.jpg">
+                </a>
+                <a href="officers/douglas-ga.html"><h3>Jessica Frost</h3></a>
+                <p><strong>Douglas, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/griffin-ga.html" class="thumb">
+                  <img alt="Wanda Smith" src="images/officers/griffin-ga.jpg">
+                </a>
+                <a href="officers/griffin-ga.html"><h3>Wanda Smith</h3></a>
+                <p><strong>Griffin, GA, </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/laurens-sc.html" class="thumb">
+                  <img alt="Elizabeth Robertson" src="images/officers/laurens-sc.jpg">
+                </a>
+                <a href="officers/laurens-sc.html"><h3>Elizabeth Robertson</h3></a>
+                <p><strong>Laurens, SC </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/madison-ga.html" class="thumb">
+                  <img alt="Kellie Conway" src="images/officers/madison-ga.jpg">
+                </a>
+                <a href="officers/madison-ga.html"><h3>Kellie Conway</h3></a>
+                <p><strong>Madison, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/rockhill-sc.html" class="thumb">
+                  <img alt="Alex Stull" src="images/officers/rockhill-sc.jpg">
+                </a>
+                <a href="officers/rockhill-sc.html"><h3>Alex Stull</h3></a>
+                <p><strong>Rock Hill, SC </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/spartanburg-sc.html" class="thumb">
+                  <img alt="Gwen Cooper" src="images/officers/spartanburg-sc.jpg">
+                </a>
+                <a href="officers/spartanburg-sc.html"><h3>Gwen Cooper</h3></a>
+                <p><strong>Spartanburg, SC </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/statesboro-ga.html" class="thumb">
+                  <img alt="Cindy Claxton" src="images/officers/statesboro-ga.jpg">
+                </a>
+                <a href="officers/statesboro-ga.html"><h3>Cindy Claxton</h3></a>
+                <p><strong>Statesboro, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/statesboro-ga-1.html" class="thumb">
+                  <img alt="Kelsey Johnson" src="images/officers/statesboro-ga-1.jpg">
+                </a>
+                <a href="officers/statesboro-ga-1.html"><h3>Kelsey Johnson</h3></a>
+                <p><strong>Statesboro, GA </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/summerville-sc.html" class="thumb">
+                  <img alt="Justin McClure" src="images/officers/summerville-sc.jpg">
+                </a>
+                <a href="officers/summerville-sc.html"><h3>Justin McClure</h3></a>
+                <p><strong>Summerville, SC </strong></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <a href="officers/vidalia-ga.html" class="thumb">
+                  <img alt="Melissa Williamson" src="images/officers/vidalia-ga.jpg">
+                </a>
+                <a href="officers/vidalia-ga.html"><h3>Melissa Williamson</h3></a>
+                <p><strong>Vidalia, GA </strong></p>
+              </div>
+            </div>
+        </div>
+
+
+    </main>
 
     <footer>
         <div class="container">
@@ -48,5 +238,13 @@
         </div>
     </footer>
 
-  </body>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/scrolling-nav.js"></script>
+
+</body>
+
 </html>
