@@ -335,6 +335,10 @@ nav {
     padding: 0;
     text-align: center;
   }
+
+  .navbar-toggle {
+    margin-top: 15px;
+  }
 }
 /* Header */
 header {
@@ -363,8 +367,18 @@ header {
   letter-spacing: 1px;
   text-shadow: 2px 2px #222;
 }
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+}
 .hero h3 {
   text-shadow: 1px 1px #333;
+}
+@media (max-width: 768px) {
+  .hero h3 {
+    font-size: 20px;
+  }
 }
 
 /* Footer */
