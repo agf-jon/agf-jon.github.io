@@ -42,7 +42,7 @@ a:focus {
 }
 
 a {
-  color: #5d9732;
+  color: #5e873d;
 }
 
 a:hover,
@@ -127,7 +127,7 @@ small.subheading a {
 
 .button-green {
   color: #fff;
-  background-color: #5d9732;
+  background-color: #5e873d;
 }
 
 .button-brown {
@@ -250,6 +250,10 @@ body {
   color: #555;
 }
 
+small {
+  font-size: 14px;
+}
+
 main {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -257,16 +261,16 @@ main {
 
 a,
 .color {
-  color: #009965;
+  color: #5e873d;
 }
 
 .color-light {
-  color: rgba(0, 153, 101, 0.5);
+  color: rgba(94, 135, 61, 0.66);
 }
 
 a:hover {
   text-decoration: none;
-  color: #009470;
+  color: #333;
 }
 
 body,
@@ -299,7 +303,7 @@ nav {
 
 .navbar-nav > li > .nav-phone,
 .navbar-nav > li > a.nav-phone {
-  background-color: #009965;
+  background-color: #5e873d;
   color: #fff;
   font-size: 24px;
   font-weight: 700;
@@ -389,7 +393,7 @@ footer {
   text-align: center;
 }
 footer a {
-  color: #009965;
+  color: #5e873d;
 }
 
 /* Officer Listing */
@@ -422,7 +426,7 @@ footer a {
   margin-bottom: 15px;
 }
 .content h1 {
-  color: #009965;
+  color: #5e873d;
   font-weight: 700;
 }
 .content .subhead {
