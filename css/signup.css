@@ -67,10 +67,9 @@ header {
 
 /* Hero */
 .hero {
-  background: url(../img/hero.jpg);
-  background-size: cover;
-  padding-top: 7.5em;
-  padding-bottom: 10em;
+  background: #333;
+  padding-top: 5em;
+  padding-bottom: 5em;
   color: #fff;
 }
 
@@ -129,8 +128,7 @@ header {
 }
 
 .contactBlock {
-  /*background: #1a1a1a;*/
-  background: #f5f5f5;
+  background: #1a1a1a;
   color: #fff;
   margin-top: -5em;
   margin-bottom: 5em;
