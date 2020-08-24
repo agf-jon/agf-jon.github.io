@@ -2225,9 +2225,16 @@ ul li {
     z-index: 20;
 }
 
-
 .content-contact .content-heading h2 {
     color: #fff;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .content-contact .content-heading h2 {
+        max-width: 100%;
+    }
 }
 
 .footer {
