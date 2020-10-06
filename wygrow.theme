@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function wygrow_preprocess_node(array &$vars) {
+  $func = 'wygrow_preprocess_node_' . $vars['node']->getType();
+  if (function_exists($func)) {
+    $func($vars);
+  }
+}
+
+function wygrow_preprocess_node_event(array &$vars) {
+  $node = $vars['node'];
+
+  $start_date = $node->field_start_date->value;
+  $end_date = $node->field_end_date->value;
+
+  $vars['is_same_day'] = $start_date == $end_date;
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for Block document templates.
+ */
+function wygrow_preprocess_block(array &$vars) {
+  try {
+    $vars['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    // If the database is not yet available, set the default value.
+    $vars['is_front'] = FALSE;
+  }
+
+  if(!empty($vars['plugin_id'])){
+    if (in_array($vars['elements']['#id'], ['sectionnavigation'])) {
+      _wygrow_section_nav($vars);
+      return;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK(), specifically to make the root item of the
+ * section nav be a link to the page it represents.
+ * @param array $vars
+ */
+function _wygrow_section_nav(array &$vars) {
+  /**
+  * Make the section nav's title be a link to the first level parent
+  */
+  if (empty($vars['elements']['content']['#menu_name'])) {
+    return;
+  }
+
+  $menu_name = $vars['elements']['content']['#menu_name'];
+  $menu_tree = \Drupal::menuTree();
+
+  $params = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
+  $params->onlyEnabledLinks();
+  $params->setMaxDepth(1);
+  $params->excludeRoot();
+  $params->addCondition('id', array_keys($params->activeTrail), 'IN');
+
+  $tree = $menu_tree->load($menu_name, $params);
+
+  if (empty($tree)) {
+    return;
+  }
+
+  $leaf = array_pop($tree);
+
+  $vars['configuration']['label_link'] = $leaf->link->getUrlObject()->toString();
+}

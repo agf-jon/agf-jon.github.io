@@ -1,0 +1,17 @@
+{
+  "name": "cw-gulp",
+  "version": "1.0.0",
+  "description": "Gulp Configuration for Front End Development",
+  "author": "AgFirst",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-datetime": "^2.0.3"
+  }
+}

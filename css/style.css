@@ -1,0 +1,144 @@
+body {
+  background: #f5f5f5;
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.25em;
+  color: #000000;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: mrs-eaves-xl-serif, serif;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.content {
+    max-width: 36em;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.8);
+    border: 5px solid #fff;
+    padding: 30px 50px;
+}
+
+.typed {
+  color: #5b8f22;
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-size: 56px;
+  font-weight: 200;
+  letter-spacing: 1.75;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Typed.js */
+#typed {
+    display: inline-block;
+    margin-right: 5px;
+    white-space: pre;
+}
+
+.typed-cursor {
+  color: #636D77;
+  display: inline-block;
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+}
+
+/* Navigation */
+.site-nav {
+  background: #3E5330;
+  min-height: 100px;
+}
+
+/* Header*/
+.site-header {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  min-height: 40rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+}
+
+.site-header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.site-header > .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .site-header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  .site-header video {
+    display: none;
+  }
+}

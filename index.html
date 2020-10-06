@@ -2,154 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Vendor Demos</title>
-    <style>
-    body {
-        background: #f5f5f5;
-        font-family: "Proxima Nova";
-        font-weight: 400;
-        font-size: 1.25em;
-        color: #555;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: 400;
-        line-height: 1.2;
-    }
-
-    .content {
-        max-width: 36em;
-        margin: 0 auto;
-        background: rgba(255,255,255,0.8);
-        border: 5px solid #fff;
-        padding: 30px 50px;
-
-    }
-
-    .title {
-        color: #999;
-        padding-bottom: 10px;
-        border-bottom: 2px solid #f5f5f5;
-    }
-
-    /* Typed.js */
-    #typed {
-        display: inline-block;
-        color: #5b8f22;
-        white-space: pre;
-        margin-right: 5px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    .typed-cursor.typed-cursor--blink {
-        display: inline-block;
-    }
-
-    /* Video */
-    header {
-      position: relative;
-      background-color: black;
-      height: 90vh;
-      min-height: 40rem;
-      width: 100%;
-      overflow: hidden;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    header video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: 0;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-    }
-
-    header .container {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-    }
-
-    header .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      opacity: 0.25;
-      z-index: 1;
-    }
-
-    @media (pointer: coarse) and (hover: none) {
-      header {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-      }
-      header video {
-        display: none;
-      }
-    }
-    </style>
+    <meta charset="utf-8">
+    <title>Wherever You Grow</title>
+    <meta name="description" content="Farm Credit is here to help.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bpa2qwb.css">
+    <meta name="theme-color" content="#3E5330">
 </head>
 
 <body>
-    <header>
-      <div class="overlay"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="bg.mp4" type="video/mp4">
-      </video>
-      <div class="container">
+
+    <!--Site Header-->
+    <header class="site-header">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/video/bg.mp4" type="video/mp4">
+        </video>
+        <div class="container">
             <div class="content">
-                <h1>Wherever You Grow...<br>in <span id="typed"></span></h1>
+                <h1>Wherever You Grow</h1>
+                <p class="typed"><span id="typed"></span></p>
                 <p>You have a partner in Farm Credit</p>
             </div>
-      </div>
+        </div>
     </header>
-  
-
-    <!--Javascript Libraries-->
-    <script src="vendor/typed.js/typed.min.js"></script>
-    <!--Typed.js Init & Functions -->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var typed = new Typed('#typed', {
-            strings: [
-                'Life',
-                'Business',
-                'Family',
-                'Home',
-                'Nature'
-            ],
-            typeSpeed: 100,
-            backSpeed: 100,
-            startDelay: 1000,
-            backDelay: 1000,
-            loop: true,
-            loopCount: Infinity,
-            showCursor: true,
-            cursorChar: '/'
-        });
-    });
-    </script>
-    <!--Other Proof of Concept-->
+    <!--Site Main-->
+    <main class="site-main">
+        <section>
+            <div class="container">
+                <div class="content">
+                    Main Content Section 1
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="content">
+                    Main Contesnt Section 2
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Site Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="content">
+                Footer Content
+            </div>
+        </div>
+    </footer>
+    <!--JS Libraries-->
+    <script src="js/vendor/typed.js/typed.min.js"></script>
+    <!--JS Initialization & Instantiation -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
