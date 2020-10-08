@@ -1,0 +1,219 @@
+/*=============================================
+  Header Styles
+=============================================*/
+
+.site-footer {
+    text-align: center;
+    background-color: $darkerblue;
+    position: relative;
+    bottom: 0;
+    
+    @include bp($medium) {
+      padding-top: 24px;
+    }
+  
+    .wrap {
+      @include bp($large) {
+        margin: 0 auto;
+        max-width: 1440px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+  
+  .footer-logo {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url('../img/updated-logo.svg'); 
+      display: inline-block;
+      vertical-align: top;
+      transition: .25s;
+      width: 200px;
+      height: 62px;
+      margin: 24px auto 20px;
+      margin-left: -20px;
+    
+    @include bp($medium) {
+      display: inline-block;
+      width: 261px;
+      height: 81px;
+      margin-top: -10px;
+    }
+
+    @include bp($large) {
+      width: 261px;
+      height: 81px;
+      margin-top: -10px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .footer-contact {
+    @include bp($medium) {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+    }
+  
+    @include bp($large) {
+      width: 25%;
+      padding-left: 90px;
+      padding-right: 30px;
+      text-align: left;
+    }
+  
+    p {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+
+      span {
+        font-weight: 400;;
+      }
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 100;
+
+      &:hover {
+        color: darken($green,20);
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .footer-nav {
+    margin: 0 auto;
+    width: 100%;
+    
+    @include bp($large) {
+      display: inline-block;
+      vertical-align: top;
+      width: 15%;
+    }
+    
+    h2 {
+      visibility: hidden;
+      height: 0;
+      margin: 0;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 200px;
+      margin: 0 auto 20px;
+  
+      @include bp($large) {
+        margin-top: 0;
+        text-align: left;
+        margin-left: 20px;
+      }
+      
+      li {
+        margin-bottom: 5px;
+        max-width: 300px;
+        a {
+          color: #f1f1f1;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer-social {
+    @include bp($large) {
+      display: inline-block;
+      vertical-align: top;
+      width: 20%;
+    }
+  
+    .social {
+      list-style: none;
+      padding: 0;
+  
+      @include bp($large) {
+        margin-top: 6px;
+      }
+  
+      li {
+        display: inline-block;
+        padding-left: 2px;
+  
+        a  {
+          display: block;
+          height: 28px;
+          width: 28px;
+          margin: 0 5px;
+          text-indent: -9999px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          transition: .25s;
+          
+          &:hover {
+            opacity: 0.6;
+          }
+  
+          &.facebook {
+            background-image: url('../img/icon-facebook.svg');
+
+          }
+          &.youtube {
+            background-image: url('../img/icon-youtube.svg');
+          }
+          &.linkedin {
+            background-image: url('../img/icon-linkedin.svg');
+          }
+          &.instagram {
+            background-image: url('../img/icon-instagram.svg');
+          }
+          &.twitter {
+            background-image: url('../img/icon-twitter.svg');
+          }
+          &.pinterest {
+            background-image: url('../img/icon-pinterest.png');
+          }
+        }
+      }
+    }
+  }
+  
+  .copyright {
+    background-color: $darkblue;
+    color: #fff;
+    font-size: 14px;
+    font-family: $sans;
+    padding: 7px 0;
+    margin: 0;
+  }
+
+  .equal-housing-lender {
+    display: block; 
+    vertical-align: middle;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10PX;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../img/footer-logo.svg');
+    
+    @include bp($large) {
+      display: inline-block;
+      width: 40px;
+      margin-right: 10px;
+    }
+  }

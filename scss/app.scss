@@ -1,0 +1,52 @@
+
+
+$ltgreen: #C9E5B5;
+$dkblue: #000;
+
+// Global variables and mixins
+@import "modules/variables";
+@import "modules/mixins";
+
+// Partials
+
+@import "partials/base";
+@import "partials/blog";
+@import "partials/breadcrumbs";
+@import "partials/button";
+@import "partials/events";
+@import "partials/calculator";
+@import "partials/ckeditor";
+@import "partials/cta";
+@import "partials/front-page-overrides";
+@import "partials/footer";
+@import "partials/form-layer";
+@import "partials/header";
+@import "partials/launchpad";
+@import "partials/leadership-layer";
+@import "partials/locations";
+@import "partials/mma";
+@import "partials/navigation";
+@import "partials/page";
+@import "partials/page-title";
+@import "partials/testimonial";
+@import "partials/typography";
+@import "partials/search";
+@import "partials/spotlight-layer";
+@import "partials/steps-layer";
+@import "partials/webinar";
+@import "partials/wysiwyg";
+@import "partials/accordion";
+
+@import "partials/drupal8overrides";
+@import "partials/external-link-dialog";
+
+// Temporary Tweaks
+@import "partials/temporary";
+
+// Vendor
+@import "vendor/normalize";
+
+// Print
+@media print {
+ @import "partials/print";
+}

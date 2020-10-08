@@ -1,0 +1,98 @@
+.dialog-off-canvas-main-canvas {
+  overflow: hidden;
+}
+.site-header {
+  background: #ffffff;
+  opacity: .9;
+  position: absolute;
+  width: 100%;
+  z-index: 12;
+
+  .wrap {
+      position: relative;
+      max-width: 1440px;
+      margin: 0 auto;
+  }
+}
+.logo {
+  margin: 0;
+  position: relative;
+  z-index: 100;
+  padding: 7px;
+  
+  @include bp($large) {
+      padding: 16px 19px;
+  }
+  a {
+      display: block;
+      width: 140px;
+      height: 36px;
+      background: url(../img/header-logo.svg) no-repeat center;
+      background-size: 140px;
+      text-indent: -9999px;
+      transition: opacity .2s ease;
+
+      @include bp($large) {
+          width: 288px;
+          height: 60px;
+          background-size: 288px;
+
+          &:hover, &:focus {
+              opacity: 0.7;
+          }
+      }
+  }
+}
+.menu-toggle {
+  display: inline-block;
+  padding: 13px 18px;
+  position: absolute;
+  top: 0; right: 0;
+  z-index: 100;
+
+  @include bp($large) {
+      display: none;
+  }
+  .nav-open & {
+      &:after {
+          opacity: 0;
+      }
+      span {
+          background: transparent;
+          transition: background .2s 0s ease;
+       
+          &:before, &:after {
+              transition: top .2s ease, transform .2s .23s ease;      
+              top: 0;
+              width: 25px;
+          }
+          &:before { transform: rotate3d(0,0,1,45deg); }
+          &:after { transform: rotate3d(0,0,1,-45deg); }
+      }
+  }
+  span {
+      display: inline-block;
+      width: 25px;
+      height: 3px;
+      background: $dkgreen;
+      text-indent: -9999px;
+      transition: transform .2s ease, background .2s .23s ease;
+      position: relative;
+      top: 11px;
+
+      &:before, &:after {
+          display: inline-block;
+          content: "";
+          width: 25px;
+          height: 3px;
+          background: $dkgreen;
+          transition: transform 0.3s ease;
+          position: absolute;
+          left: 0;
+          transform-origin: 50% 50%;
+          transition: top .2s .2s ease, transform .2s ease;
+      }
+      &:before { top: 8px; }
+      &:after { top: -8px; }
+  }
+}
