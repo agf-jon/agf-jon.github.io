@@ -1,58 +1,93 @@
-/* ==========================================================================
-  Base Styles
-========================================================================== */
-
-*, *:before, *:after { box-sizing: border-box; }
+html {
+  color: $text-color;
+  font-size: 1em;
+  line-height: 1.4;
+}
 
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
-::selection { 
+
+::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
-audio, canvas, iframe, img, svg, video {
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid lighten($darkgrey, 50%);
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
   vertical-align: middle;
 }
-img {
-  display: block;
-  margin: 0 auto;
-  vertical-align: middle; 
-  max-width: 100%;
-}
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-textarea { 
+
+textarea {
   resize: vertical;
 }
 
-.hidden {  // Hide + Remove from DOM & Flow
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden,
+[hidden] {
   display: none !important;
 }
 
-.visuallyhidden {  // Hide + Remove from Flow + Keep in DOM
+.sr-only {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
+  white-space: nowrap;
   width: 1px;
 }
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { 
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
+  white-space: inherit;
   width: auto;
 }
 
-.invisible {  // Hide + Keep in DOM & Flow
+.invisible {
   visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
 }
