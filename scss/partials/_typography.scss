@@ -33,7 +33,7 @@ em {
 }
 
 blockquote {
-  border-left: 0.3rem solid #d1d1d1;
+  border-left: 0.3rem solid lighten($tan, 50%);
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
@@ -139,7 +139,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  letter-spacing: -.1rem;
   margin-bottom: 2.0rem;
   margin-top: 0;
 }
