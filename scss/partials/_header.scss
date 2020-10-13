@@ -1,5 +1,5 @@
 .typed {
-  color: $darkgrey;
+  color: $grey;
   font-family: $sans;
   font-size: 56px;
   font-weight: 200;
@@ -18,8 +18,8 @@
 .typed-cursor {
   color: #636D77;
   display: inline-block;
-  font-family: $serif;
-  font-weight: 400;
+  font-family: $sans;
+  font-weight: 200;
 }
 
 /* Header*/
@@ -65,7 +65,20 @@
   position: relative;
   z-index: 2;
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.site-header .brand {
+  margin-bottom: 4rem;
+}
+
+.site-header .content {
+  padding: 3em 2.75em 1.5em;
+  background: #fff;
+  text-align: center;
+  min-width: 450px;
+  border: 20px solid #50301a;
 }
 
 @media (pointer: coarse) and (hover: none) {
