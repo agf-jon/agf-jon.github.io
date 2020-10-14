@@ -1,5 +1,26 @@
 .site-footer {
+  background-color: #50301a;
+  background-image: url('../img/patterns/wood.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   padding: 4rem;
-  background: #50301a;
+  position: relative;
+}
+
+.site-footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $filterWarm;
+  z-index: 1;
+}
+
+.site-footer > .container {
+  position: relative;
+  z-index: 10;
 }
