@@ -11,7 +11,29 @@ body {
   line-height: 1.65;
 }
 
-p {margin-bottom: 1.15rem;}
+p {
+  margin-bottom: 1.15rem;
+}
+
+a {
+  color: $link-color;
+  font-weight: 400;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: $teal;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
 
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
@@ -25,77 +47,56 @@ h1 {
   font-size: 3.052em;
 }
 
-h2 {font-size: 2.441em;}
-
-h3 {font-size: 1.953em;}
-
-h4 {font-size: 1.563em;}
-
-h5 {font-size: 1.25em;}
-
-small, .text_small {font-size: 0.8em;}
-
-a {
-  color: $link-color;
-  font-weight: 400;
-  text-decoration: underline;
-  &:hover,
-  &:focus {
-    color: $teal;
-  }
+h2 {
+  font-size: 2.441em;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+h3 {
+  font-size: 1.953em;
 }
 
-b,
-strong {
-  font-weight: 700;
+h4 {
+  font-size: 1.563em;
 }
 
-i,
-em {
-  font-style: italic;
+h5 {
+  font-size: 1.25em;
+}
+
+small,
+.text_small {
+  font-size: 0.8em;
+}
+
+/* Special Treatments */
+.display {
+  font-size: 56px;
+  line-height: 0.9;
+  margin-bottom: 0;
+}
+
+.fancy {
+  font-family: cinque-donne;
+  font-size: 84px;
+  line-height: 48px;
+  text-transform: lowercase;
 }
 
 /* Other Elements */
 blockquote {
   border-left: 0.3rem solid lighten($tan, 15%);
   font-family: $serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
   color: $grey;
-  line-height: 2.5rem;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 auto 2em;
   padding: 0 0 0 1.5rem;
 }
 
-blockquote *:last-child {
-  margin-bottom: 0;
-}
-
-dl,
 ol,
 ul {
-  list-style: none;
-  margin-top: 0;
-  padding-left: 0;
-}
-
-dl dl,
-dl ol,
-dl ul,
-ol dl,
-ol ol,
-ol ul,
-ul dl,
-ul ol,
-ul ul {
-  font-size: 90%;
-  margin: 1.5rem 0 1.5rem 3.0rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 ol {
@@ -103,26 +104,19 @@ ol {
 }
 
 ul {
-  list-style: circle inside;
+  list-style: square;
 }
 
-.button,
-button,
-dd,
-dt,
-li {
-  margin-bottom: 1rem;
+ol li,
+ul li {
+  margin-bottom: 0.5rem;
 }
 
-fieldset,
+/*fieldset,
 input,
 select,
-textarea {
-  margin-bottom: 1rem;
-}
-
+textarea,
 blockquote,
-dl,
 figure,
 form,
 ol,
@@ -131,7 +125,7 @@ pre,
 table,
 ul {
   margin-bottom: 1rem;
-}
+}*/
 
 /* Tables */
 table {
@@ -163,20 +157,6 @@ th:last-child {
     display: table;
     overflow-x: initial;
   }
-}
-
-/* Special Treatments */
-.display {
-  font-size: 48px;
-  line-height: 0.9;
-  margin-bottom: 0;
-}
-
-.fancy {
-  font-family: cinque-donne;
-  font-size: 70px;
-  line-height: 48px;
-  text-transform: lowercase;
 }
 
 /* Media */
