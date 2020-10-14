@@ -7,20 +7,20 @@
   color: #fff;
   padding: 4rem;
   position: relative;
-}
 
-.site-footer:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: $filterWarm;
-  z-index: 1;
-}
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $filterWarm;
+    z-index: 1;
+  }
 
-.site-footer > .container {
-  position: relative;
-  z-index: 10;
+  & > .container {
+    position: relative;
+    z-index: 10;
+  }
 }

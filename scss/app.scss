@@ -3,17 +3,33 @@
 @import "modules/mixins";
 
 // Vendor
-//@import "vendor/normalize";
-@import "vendor/reboot";
+// Configuration
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "vendor/bootstrap/utilities";
+
+// Layout & components
+@import "vendor/bootstrap/root";
+@import "vendor/bootstrap/reboot";
+@import "vendor/bootstrap/type";
+@import "vendor/bootstrap/images";
+@import "vendor/bootstrap/containers";
+@import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/tables";
+@import "vendor/bootstrap/forms";
+@import "vendor/bootstrap/buttons";
+@import "vendor/bootstrap/transitions";
+@import "vendor/bootstrap/dropdown";
+@import "vendor/bootstrap/button-group";
+
 
 // Global Partials
 @import "partials/base";
 @import "partials/typography";
-@import "partials/buttons";
-@import "partials/forms";
 @import "partials/layout";
 @import "partials/header";
-
+@import "partials/sections";
 @import "partials/footer";
 
 // Print

@@ -68,6 +68,28 @@ small,
 }
 
 /* Special Treatments */
+.typed {
+  color: $grey;
+  font-family: $sans;
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+/* Typed.js */
+#typed {
+  display: inline-block;
+  margin-right: 5px;
+  white-space: pre;
+}
+
+.typed-cursor {
+  color: #636D77;
+  display: inline-block;
+  font-family: $sans;
+  font-weight: 200;
+}
 .display {
   font-size: 56px;
   line-height: 0.9;
