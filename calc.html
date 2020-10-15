@@ -2,16 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Wherever You Grow</title>
-    <meta name="description" content="Farm Credit is here to help.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/bpa2qwb.css">
-    <meta name="theme-color" content="#3E5330">
+	<meta charset="utf-8">
+	<title>Wherever You Grow</title>
+	<meta name="description" content="Farm Credit is here to help.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="css/app.css">
+	<meta name="theme-color" content="#3E5330">
 </head>
 
 <body>
@@ -20,19 +17,19 @@
 		<section>
 		    <div class="container">
 		        <div class="content">
-		            <div>
+					<div class="form-group">
 		                <label for="pprice">Purchase Price:</label>
-		                <input class="form-control" id="pprice" type="number">
+		                <input class="form-control" id="pprice" type="text" data-mask="#">
 		            </div>
-		            <div>
+		            <div class="form-group">
 		                <label for="intrate">Interest rate (%):</label>
-		                <input class="form-control" id="intrate" type="number">
+		                <input class="form-control" id="intrate" type="text">
 		            </div>
-		            <div>
+					<div class="form-group">
 		                <label for="dpamt">Down payment</label>
-		                <input class="form-control" id="dpamt" type="number">
+		                <input class="form-control" id="dpamt" type="text" data-mask="000,000,000,000,000.00">
 		            </div>
-		            <div>
+					<div class="form-group">
 		                <label for="numyears">Number of years:</label>
 		                <select class="form-control" id="numyears">
 		                    <option>20</option>

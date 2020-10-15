@@ -38,34 +38,17 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
-    {% if not logged_in %}
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WFJM782');</script>
-      <!-- End Google Tag Manager -->
-    {% endif %}
-
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    {% if not logged_in %}
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFJM782"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-    {% endif %}
-
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.
     #}
-    <a href="#main-content" class="visually-hidden focusable">
+    <a href="#main-content" class="sr-only visually-hidden focusable">
       {{ 'Skip to main content'|t }}
     </a>
     {{ page_top }}

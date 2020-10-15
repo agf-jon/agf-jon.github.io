@@ -15,7 +15,7 @@
 
     .typed {
       color: #fff;
-      margin-bottom: 2rem;
+      margin: 1.25rem auto 2rem;
       line-height: 1.25;
     }
 
@@ -25,6 +25,10 @@
 
       input {
         text-align: center;
+
+        &::placeholder {
+          color: lighten($text-color, 75%);
+        }
       }
 
       button {
