@@ -4496,7 +4496,8 @@ section {
 
 @media (pointer: coarse) and (hover: none) {
     .site-header {
-        background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll
+        background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
+        min-height: 0
     }
 
     .site-header video {
