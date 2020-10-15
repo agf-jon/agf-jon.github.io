@@ -22,7 +22,7 @@ function numberWithCommas(x) {
 }
 
 $('#calcit').click(function (e) {
-    e.preventDefault();
+    //e.preventDefault();
     var pp = $('#pprice').val();
     var dp = $('#dpamt').val();
     var loanamt = pp - dp;
