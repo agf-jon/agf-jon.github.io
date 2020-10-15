@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: #50301a;
+  background-color: rgba(57, 34, 17, 1);
   background-image: url('../img/patterns/wood.jpg');
   background-position: top center;
   background-repeat: no-repeat;
@@ -7,6 +7,10 @@
   color: #fff;
   padding: 4rem;
   position: relative;
+  text-align: center;
+  @media (min-width: $large) {
+    text-align: left;
+  }
 
   &:before {
     content: '';
