@@ -4161,8 +4161,10 @@ progress {
     margin-top: -1px
 }
 
-.btn {
-    text-transform: uppercase
+.btn, .form-control {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem
 }
 
 ::-moz-selection {
