@@ -2,19 +2,21 @@
 @import "modules/variables";
 @import "modules/mixins";
 
-// Vendor
-// Configuration
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
 @import "vendor/bootstrap/functions";
 @import "vendor/bootstrap/variables";
 @import "vendor/bootstrap/mixins";
-@import "vendor/bootstrap/utilities";
-
-// Layout & components
 @import "vendor/bootstrap/root";
 @import "vendor/bootstrap/reboot";
 @import "vendor/bootstrap/type";
 @import "vendor/bootstrap/images";
-@import "vendor/bootstrap/containers";
+@import "vendor/bootstrap/code";
 @import "vendor/bootstrap/grid";
 @import "vendor/bootstrap/tables";
 @import "vendor/bootstrap/forms";
@@ -22,14 +24,20 @@
 @import "vendor/bootstrap/transitions";
 @import "vendor/bootstrap/dropdown";
 @import "vendor/bootstrap/button-group";
+@import "vendor/bootstrap/input-group";
+@import "vendor/bootstrap/custom-forms";
+@import "vendor/bootstrap/media";
+@import "vendor/bootstrap/list-group";
+@import "vendor/bootstrap/utilities";
+@import "vendor/bootstrap/print";
 
 // Overrides
-@import "vendor/bs-overrides";
+@import "partials/bs-overrides";
 
-// Partials
+// Global Partials
 @import "partials/base";
 @import "partials/typography";
-//@import "partials/button";
-//@import "partials/accordion";
-
-//@import "partials/ckeditor";
+@import "partials/layout";
+@import "partials/header";
+@import "partials/sections";
+@import "partials/footer";
