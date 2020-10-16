@@ -1,75 +1,22 @@
-html {
-  font-size: 100%;
-}
-
 body {
-  font-family: $font-family-sans-serif;
-  font-weight: 200;
   font-size: 1.25em;
-  font-style: normal;
-  line-height: 1.55;
 
-  @media (min-width: $large) {
+  @include media-breakpoint-up(lg) {
     font-size: 1.125em;
     line-height: 1.65;
   }
 }
 
-p {
-  margin-bottom: 1.15rem;
-}
-
 a {
-  color: $link-color;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
+}
+
+a:not(.btn) {
   text-decoration: underline;
-  &:hover,
-  &:focus {
-    color: $teal;
-  }
-}
-
-b,
-strong {
-  font-weight: 700;
-}
-
-i,
-em {
-  font-style: italic;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1.05rem;
   font-family: $font-family-serif;
-  font-weight: 700;
-  line-height: 1.15;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.052em;
-}
-
-h2 {
-  font-size: 2.441em;
-}
-
-h3 {
-  font-size: 1.953em;
-}
-
-h4 {
-  font-size: 1.563em;
-}
-
-h5 {
-  font-size: 1.25em;
-}
-
-small,
-.text_small {
-  font-size: 0.8em;
 }
 
 /* Special Treatments */
@@ -79,7 +26,7 @@ small,
   font-size: 35px;
   font-weight: 200;
   letter-spacing: 1px;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 /* Typed.js */
@@ -90,11 +37,12 @@ small,
 }
 
 .typed-cursor {
-  color: #636D77;
+  color: $grey;
   display: inline-block;
   font-family: $font-family-sans-serif;
   font-weight: 200;
 }
+
 .display {
   font-size: 60px;
   line-height: 0.9;
@@ -112,81 +60,10 @@ small,
 /* Other Elements */
 blockquote {
   border-left: 0.3rem solid lighten($tan, 15%);
-  font-family: $serif;
+  font-family: $font-family-serif;
   font-size: 1.25em;
   font-weight: 400;
   color: $grey;
   margin: 0 auto 2em;
   padding: 0 0 0 1.5rem;
-}
-
-ol,
-ul {
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-ol {
-  list-style: decimal inside;
-}
-
-ul {
-  list-style: square;
-}
-
-ol li,
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-/*fieldset,
-input,
-select,
-textarea,
-blockquote,
-figure,
-form,
-ol,
-p,
-pre,
-table,
-ul {
-  margin-bottom: 1rem;
-}*/
-
-/* Tables */
-table {
-  border-spacing: 0;
-  display: block;
-  overflow-x: auto;
-  text-align: left;
-  width: 100%;
-}
-
-td,
-th {
-  border-bottom: 0.1rem solid #e1e1e1;
-  padding: 1.2rem 1.5rem;
-}
-
-td:first-child,
-th:first-child {
-  padding-left: 0;
-}
-
-td:last-child,
-th:last-child {
-  padding-right: 0;
-}
-
-@media (min-width: 40rem) {
-  table {
-    display: table;
-    overflow-x: initial;
-  }
-}
-
-/* Media */
-img {
-  max-width: 100%;
 }

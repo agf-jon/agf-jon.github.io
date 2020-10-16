@@ -8,7 +8,7 @@
   padding: 4rem;
   position: relative;
   text-align: center;
-  @media (min-width: $large) {
+  @include media-breakpoint-up(lg) {
     text-align: left;
   }
 

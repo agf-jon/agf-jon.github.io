@@ -1,6 +1,4 @@
-// Global variables and mixins
-@import "modules/variables";
-@import "modules/mixins";
+@import url('https://use.typekit.net/bpa2qwb.css');
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -9,9 +7,16 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-@import "vendor/bootstrap/functions";
-@import "vendor/bootstrap/variables";
-@import "vendor/bootstrap/mixins";
+// Custom Variables & Mixins (so we can update bootstrap without overwriting customizations)
+@import "modules/bs-functions";
+@import "modules/bs-variables";
+@import "modules/bs-mixins";
+
+// Global variables and mixins
+@import "partials/custom-variables";
+@import "partials/custom-mixins";
+
+// Bootstrap components
 @import "vendor/bootstrap/root";
 @import "vendor/bootstrap/reboot";
 @import "vendor/bootstrap/type";
@@ -22,12 +27,9 @@
 @import "vendor/bootstrap/forms";
 @import "vendor/bootstrap/buttons";
 @import "vendor/bootstrap/transitions";
-@import "vendor/bootstrap/dropdown";
 @import "vendor/bootstrap/button-group";
 @import "vendor/bootstrap/input-group";
-@import "vendor/bootstrap/custom-forms";
 @import "vendor/bootstrap/media";
-@import "vendor/bootstrap/list-group";
 @import "vendor/bootstrap/utilities";
 @import "vendor/bootstrap/print";
 
@@ -37,7 +39,7 @@
 // Global Partials
 @import "partials/base";
 @import "partials/typography";
-@import "partials/layout";
+@import "partials/content";
 @import "partials/header";
 @import "partials/sections";
 @import "partials/footer";
