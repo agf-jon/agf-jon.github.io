@@ -2,9 +2,6 @@
 .site-header {
   position: relative;
   background-color: $green;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   border-top: 5px solid $teal;
   min-height: 80vh;
   padding-top: 4rem;
@@ -24,6 +21,21 @@
     width: 100%;
     background: $filterWarm;
     z-index: 1;
+  }
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
 
   & > .container {
@@ -58,12 +70,17 @@
   }
 }
 
-.header-splash {
-  background-image: url('../img/hero-splash.jpg');
+.aca-header {
+  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   min-height: 0;
 }
 
-.header-aca {
-  background-image: url('../img/hero-aca.jpg');
-  min-height: 0;
+@media (pointer: coarse) and (hover: none) {
+  .site-header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    min-height: 0;
+  }
+  .site-header video {
+    display: none;
+  }
 }

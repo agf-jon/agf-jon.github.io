@@ -176,6 +176,27 @@ section {
   }
 }
 
+.calculator {
+  .calc-copy {
+    text-align: center;
+
+    & > .container {
+      max-width: $md;
+    }
+  }
+
+  .calcLoan {
+    background-image: url('../img/masthead.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 480px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+}
+
 
 .prefooter {
   background-color: $teal;
@@ -196,6 +217,10 @@ section {
     form {
       input {
         text-align: center;
+
+        ::placeholder {
+          font-size: 15px;
+        }
       }
 
     }

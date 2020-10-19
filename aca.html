@@ -39,10 +39,7 @@
     Skip to main content
 </a>
 <!--Site Header-->
-<header class="site-header">
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="img/video/bg.mp4" type="video/mp4">
-    </video>
+<header class="site-header header-aca">
     <div class="container">
         <div class="brand">
             <img src="img/logos/FarmCredit.svg" width="250">
@@ -63,23 +60,11 @@
     <div class="topCta">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 offset-md-2">
                     <p class="getHelp">GET HELP MOVING<br> TO THE COUNTRY</p>
                 </div>
-                <div class="col-md-8">
-                    <form id="zipLookup" class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="zip" class="sr-only">Zip Code Search</label>
-                                <input type="text" class="form-control" id="zip" name="zip"
-                                       placeholder="ENTER YOUR ZIP CODE"
-                                       data-mask="00000" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-block btn-outline-light">Find A Branch</button>
-                        </div>
-                    </form>
+                <div class="col-md-4">
+                    <a class="btn btn-outline-light btn-block" href="/contact.html">Get Started</a>
                 </div>
 
             </div>
@@ -154,28 +139,41 @@
     </section>
 
     <section class="calculator">
+        <div class="calc-copy">
+            <div class="container">
+                <h2>Ready to Social Distance for the Long Haul? <br>Get the Financing to Make it Possible.</h2>
+                <p class="lead">Do the cities and suburbs have you feeling crowded in and stressed out? With the chaos
+                    and unpredictability of today’s world, there’s never been a better time to carve out your own slice
+                    of country paradise. Wherever you grow, no matter the situation, Farm Credit is here to support
+                    you.</p>
+            </div>
+        </div>
         <div class="container">
-            <form>
-                <div class="form-group">
-                    <label for="pprice">Purchase Price:</label>
-                    <input class="form-control" id="pprice" type="text" placeholder="200,000" required>
+            <form class="calcLoan">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="pprice">Purchase Price:</label>
+                        <input class="form-control" id="pprice" type="text" placeholder="200,000" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="intrate">Interest rate (%):</label>
+                        <input class="form-control" id="intrate" type="text" placeholder="3.50" required>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="intrate">Interest rate (%):</label>
-                    <input class="form-control" id="intrate" type="text" placeholder="3.50" required>
-                </div>
-                <div class="form-group">
-                    <label for="dpamt">Down payment</label>
-                    <input class="form-control" id="dpamt" type="text" placeholder="40,000" required>
-                </div>
-                <div class="form-group">
-                    <label for="numyears">Number of years:</label>
-                    <select class="form-control" id="numyears" required>
-                        <option>20</option>
-                        <option>15</option>
-                        <option>10</option>
-                        <option>5</option>
-                    </select>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="dpamt">Down payment</label>
+                        <input class="form-control" id="dpamt" type="text" placeholder="40,000" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="numyears">Number of years:</label>
+                        <select class="form-control" id="numyears" required>
+                            <option>20</option>
+                            <option>15</option>
+                            <option>10</option>
+                            <option>5</option>
+                        </select>
+                    </div>
                 </div>
                 <button class="btn btn-block btn-primary" href="#" id="calcit">Calculate</button>
                 <button class="btn btn-block btn-secondary" href="#" id="resetit">Reset</button>
@@ -190,14 +188,7 @@
         <div class="container">
             <h2 class="display"><span class="fancy">wherever</span><br>you grow</h2>
             <p class="typed">Farm Credit has the tools to help you cultivate your dreams.</p>
-            <form id="zipLookup">
-                <div class="form-group">
-                    <label for="zip" class="sr-only">Zip Code Search</label>
-                    <input type="text" class="form-control" id="zip" name="zip" placeholder="ENTER YOUR ZIP CODE"
-                           data-mask="00000" required>
-                </div>
-                <button type="submit" class="btn btn-block btn-outline-light">Find A Branch</button>
-            </form>
+            <a href="/contact.html" type="submit" class="btn btn-block btn-outline-light">Get Started</a>
         </div>
     </section>
 </main>
