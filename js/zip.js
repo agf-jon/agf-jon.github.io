@@ -11767,8 +11767,8 @@
 
     var defaultUrl = "/aca.html";
 
-    $("#zipLookup").on("submit", function (e) {
-        var zip = parseInt($("#zip").val());
+    $("#zipLookupTop,#zipLookupBottom").on("submit", function (e) {
+        var zip = parseInt($("#zipTop,#zipBottom").val());
         var targetUrl = defaultUrl;
 
         for (var url in zipMap) {
