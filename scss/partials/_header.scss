@@ -55,8 +55,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 3em 2.75em 2em;
+    padding: 5rem 2rem 2rem;
+    width: 400px;
+    height: 400px;
     text-align: center;
+
+    .typed {
+      margin-top: 1rem;
+    }
+
+    img {
+      margin: 1rem auto;
+    }
   }
 }
 
