@@ -43,7 +43,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 2.5rem 2rem;
     width: 400px;
     height: 400px;
     text-align: center;
@@ -54,6 +54,7 @@
 
     img {
       margin: 1rem auto;
+      width: 100%;
     }
   }
 }

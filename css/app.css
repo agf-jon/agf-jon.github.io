@@ -7766,7 +7766,7 @@ main .main-content > .container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 2.5rem 2rem;
     width: 400px;
     height: 400px;
     text-align: center
@@ -7777,7 +7777,8 @@ main .main-content > .container {
 }
 
 .site-header .masthead img {
-    margin: 1rem auto
+    margin: 1rem auto;
+    width: 100%
 }
 
 .header-splash {
