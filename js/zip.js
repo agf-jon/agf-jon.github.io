@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     var zipMap = {
         '/eca/': [27502,
             27504,
