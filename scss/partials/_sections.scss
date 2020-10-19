@@ -1,24 +1,186 @@
 section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+  }
+}
+
+.topCta {
+  background: $teal;
+  border-top: 1rem solid rgba(172, 144, 126, 0.15);
+  margin-top: -1rem;
+  color: #fff;
+  padding: 2rem 0;
+  width: 100%;
+
+  & > .container {
+    max-width: $lg;
+  }
+
+  .getHelp {
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: right;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+      letter-spacing: 0.05rem;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  form {
+    input {
+      text-align: center;
+    }
+
+  }
+}
+
+.intro {
+  .intro-copy {
+    text-align: center;
+
+    & > .container {
+      max-width: $md;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    strong {
+      color: $green;
+    }
+
+    @include media-breakpoint-down(md) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .intro-launchpads {
+    padding-top: 2em;
+
+    & > .container {
+      max-width: $lg;
+    }
+
+    .launchpad-item {
+      text-align: center;
+
+      .launchpad-img {
+        margin-bottom: 1em;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      .launchpad-title {
+        color: $green;
+        font-size: 1.5rem;
+      }
+
+      .launchpad-content {
+        font-size: 1rem;
+      }
+    }
+
+    .media {
+      text-align: left;
+      margin-bottom: 1em;
+
+      @include media-breakpoint-down(md) {
+        display: block;
+        text-align: center;
+      }
+
+      .launchpad-img {
+        margin-right: 1em;
+        @include media-breakpoint-down(md) {
+          margin-right: 0;
+        }
+      }
+
+    }
+  }
+
+}
+
+.time2move {
+  text-align: center;
+  background: $green;
+  color: #fff;
+
+  & > .container {
+    max-width: $sm;
+  }
+
+  .typed {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+}
+
+.growKnowledge {
+  background-image: url('../img/patterns/dashes.png');
+}
+
+.download {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: $green;
+  color: #fff;
+  text-align: center;
+
+  .download-image {
+    background-image: url('../img/download.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh;
+  }
+
+  .download-form {
+    padding: 4rem;
+
+    form {
+      text-align: left;
+    }
+
+    .sep {
+      display: block;
+      height: 1px;
+      background-color: #fff;
+      width: 10em;
+      margin: 1rem auto;
+    }
+  }
 }
 
 
-.cta {
+.prefooter {
   background-color: $teal;
   color: #fff;
   text-align: center;
   padding-top: 6rem;
   padding-bottom: 6rem;
 
-  .content {
-    max-width: 25em;
-    margin-left: auto;
-    margin-right: auto;
-
-    h1 {
-      margin-bottom: 1rem;
-    }
+  & > .container {
+    max-width: $sm;
 
     .typed {
       color: #fff;
@@ -27,17 +189,12 @@ section {
     }
 
     form {
-      max-width: 80%;
-      margin: 0 auto;
-
       input {
         text-align: center;
-
-        &::placeholder {
-        }
       }
 
     }
+
   }
 
 }

@@ -7651,6 +7651,10 @@ h1, h2, h3, h4, h5 {
     font-family: mrs-eaves-xl-serif, Georgia, Baskerville, Times, "Times New Roman", serif
 }
 
+.lead {
+    font-size: 1.375rem
+}
+
 .typed {
     color: #636d77;
     font-family: mr-eaves-xl-modern, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -7697,21 +7701,9 @@ blockquote {
     padding: 0 0 0 1.5rem
 }
 
-main .content {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
-}
-
-@media (min-width: 992px) {
-    main .content {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 66.66667%;
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-        margin-left: 16.66667%
-    }
+.main-content > .container {
+    max-width: 720px;
+    margin: 0 auto
 }
 
 .site-header {
@@ -7777,12 +7769,13 @@ main .content {
     margin-bottom: 4em
 }
 
-.site-header .content {
-    padding: 3em 3em 1.5em;
-    background: #fff;
-    text-align: center;
-    -o-border-image: url("../img/patterns/frame-left.png") 30 fill/30px/30px space;
-    border-image: url("../img/patterns/frame-left.png") 30 fill/30px/30px space
+.site-header .masthead {
+    background-image: url("../img/masthead.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em 2.75em 2em;
+    text-align: center
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -7797,11 +7790,180 @@ main .content {
 }
 
 section {
-    padding-top: 4rem;
-    padding-bottom: 4rem
+    padding-top: 2rem;
+    padding-bottom: 2rem
 }
 
-.cta {
+@media (min-width: 768px) {
+    section {
+        padding-top: 4rem;
+        padding-bottom: 4rem
+    }
+}
+
+.topCta {
+    background: #6A8C7C;
+    border-top: 1rem solid rgba(172, 144, 126, 0.15);
+    margin-top: -1rem;
+    color: #fff;
+    padding: 2rem 0;
+    width: 100%
+}
+
+.topCta > .container {
+    max-width: 960px
+}
+
+.topCta .getHelp {
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: right
+}
+
+@media (max-width: 991.98px) {
+    .topCta .getHelp {
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+        text-align: center
+    }
+
+    .topCta .getHelp br {
+        display: none
+    }
+}
+
+.topCta form input {
+    text-align: center
+}
+
+.intro .intro-copy {
+    text-align: center
+}
+
+.intro .intro-copy > .container {
+    max-width: 720px
+}
+
+.intro .intro-copy h2 {
+    margin-bottom: 1rem
+}
+
+.intro .intro-copy strong {
+    color: #3E5330
+}
+
+@media (max-width: 991.98px) {
+    .intro .intro-copy br {
+        display: none
+    }
+}
+
+.intro .intro-launchpads {
+    padding-top: 2em
+}
+
+.intro .intro-launchpads > .container {
+    max-width: 960px
+}
+
+.intro .intro-launchpads .launchpad-item {
+    text-align: center
+}
+
+.intro .intro-launchpads .launchpad-item .launchpad-img {
+    margin-bottom: 1em
+}
+
+.intro .intro-launchpads .launchpad-item .launchpad-img img {
+    border-radius: 50%
+}
+
+.intro .intro-launchpads .launchpad-item .launchpad-title {
+    color: #3E5330;
+    font-size: 1.5rem
+}
+
+.intro .intro-launchpads .launchpad-item .launchpad-content {
+    font-size: 1rem
+}
+
+.intro .intro-launchpads .media {
+    text-align: left;
+    margin-bottom: 1em
+}
+
+@media (max-width: 991.98px) {
+    .intro .intro-launchpads .media {
+        display: block;
+        text-align: center
+    }
+}
+
+.intro .intro-launchpads .media .launchpad-img {
+    margin-right: 1em
+}
+
+@media (max-width: 991.98px) {
+    .intro .intro-launchpads .media .launchpad-img {
+        margin-right: 0
+    }
+}
+
+.time2move {
+    text-align: center;
+    background: #3E5330;
+    color: #fff
+}
+
+.time2move > .container {
+    max-width: 540px
+}
+
+.time2move .typed {
+    color: #fff;
+    margin-bottom: 1rem
+}
+
+.growKnowledge {
+    background-image: url("../img/patterns/dashes.png")
+}
+
+.download {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #3E5330;
+    color: #fff;
+    text-align: center
+}
+
+.download .download-image {
+    background-image: url("../img/download.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh
+}
+
+.download .download-form {
+    padding: 4rem
+}
+
+.download .download-form form {
+    text-align: left
+}
+
+.download .download-form .sep {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    width: 10em;
+    margin: 1rem auto
+}
+
+.prefooter {
     background-color: #6A8C7C;
     color: #fff;
     text-align: center;
@@ -7809,28 +7971,17 @@ section {
     padding-bottom: 6rem
 }
 
-.cta .content {
-    max-width: 25em;
-    margin-left: auto;
-    margin-right: auto
+.prefooter > .container {
+    max-width: 540px
 }
 
-.cta .content h1 {
-    margin-bottom: 1rem
-}
-
-.cta .content .typed {
+.prefooter > .container .typed {
     color: #fff;
     margin: 1.25rem auto 2rem;
     line-height: 1.25
 }
 
-.cta .content form {
-    max-width: 80%;
-    margin: 0 auto
-}
-
-.cta .content form input {
+.prefooter > .container form input {
     text-align: center
 }
 
@@ -7841,7 +7992,8 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     position: relative;
     text-align: center
 }

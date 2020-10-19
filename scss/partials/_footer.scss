@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   position: relative;
   text-align: center;
   @include media-breakpoint-up(lg) {
