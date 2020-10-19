@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('#typed', {
         strings: [
-            '...in life',
-            '...in business',
             '...in family',
-            '...in home',
-            '...in nature'
+            '...in business',
+            '...in nature',
+            '...in fun',
+            '...in life'
         ],
         typeSpeed: 100,
         backSpeed: 100,
