@@ -41,5 +41,5 @@ $('#calcit').click(function (e) {
     var finalamt = payment * months;
     finalamt = finalamt - loanamt;
     finalamt = finalamt.toFixed(2);
-    $('#calcresults').html('<div class="col-sm-4">Amount financed:<h3 class="feature-head"><sup>$</sup>' + numberWithCommas(loanamt) + '</h3></div><div class="col-sm-4">Monthly payment:<h3 class="feature-head"><sup>$</sup>' + numberWithCommas(payment) + '</h3></div><div class="col-sm-4">Total interest:<h3 class="feature-head"><sup>$</sup>' + numberWithCommas(finalamt) + '</h3></div>');
+    $('#calcresults').html('<div class="row"><div class="col-sm-4">Amount financed:<h3 class="feature-head"><sup>$</sup>' + numberWithCommas(loanamt) + '</h3></div><div class="col-sm-4">Monthly payment:<h3 class="feature-head"><sup>$</sup>' + numberWithCommas(payment) + '</h3></div><div class="col-sm-4">Total interest:<h3 class="feature-head"><sup>$</sup>' + numberWithCommas(finalamt) + '</h3></div></div>');
 });

@@ -45,8 +45,11 @@ section {
   form {
     input {
       text-align: center;
-    }
 
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
   }
 }
 
@@ -158,8 +161,7 @@ section {
   .download-form {
     padding: 2rem;
     @include media-breakpoint-up(md) {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding: 4rem;
     }
 
     form {
@@ -193,10 +195,27 @@ section {
     width: 720px;
     height: 480px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 4rem;
+    @include media-breakpoint-down(md) {
+      background-image: none;
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+    }
+  }
+
+  #calcresults {
+    background: lighten($tan, 10%);
+    max-width: $md;
+    margin: 1rem auto 0;
+    text-align: center;
+
+    & > div {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 }
-
 
 .prefooter {
   background-color: $teal;
@@ -207,24 +226,22 @@ section {
 
   & > .container {
     max-width: $sm;
+  }
 
-    .typed {
-      color: #fff;
-      margin: 1.25rem auto 2rem;
-      line-height: 1.25;
-    }
+  .typed {
+    color: #fff;
+    margin: 1.25rem auto 2rem;
+    line-height: 1.25;
+  }
 
-    form {
-      input {
-        text-align: center;
+  form {
+    input {
+      text-align: center;
 
-        ::placeholder {
-          font-size: 15px;
-        }
+      &::placeholder {
+        font-size: 16px;
       }
-
     }
-
   }
 
 }

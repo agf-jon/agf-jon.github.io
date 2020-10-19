@@ -7545,7 +7545,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn, .form-control {
-    font-size: 1.125em;
     text-transform: uppercase;
     letter-spacing: 0.1rem
 }
@@ -7839,6 +7838,26 @@ section {
     text-align: center
 }
 
+.topCta form input::-webkit-input-placeholder {
+    font-size: 16px
+}
+
+.topCta form input::-moz-placeholder {
+    font-size: 16px
+}
+
+.topCta form input:-ms-input-placeholder {
+    font-size: 16px
+}
+
+.topCta form input::-ms-input-placeholder {
+    font-size: 16px
+}
+
+.topCta form input::placeholder {
+    font-size: 16px
+}
+
 .intro .intro-copy {
     text-align: center
 }
@@ -7952,8 +7971,7 @@ section {
 
 @media (min-width: 768px) {
     .download .download-form {
-        padding-top: 4rem;
-        padding-bottom: 4rem
+        padding: 4rem
     }
 }
 
@@ -7985,7 +8003,28 @@ section {
     width: 720px;
     height: 480px;
     margin: 0 auto;
-    padding: 3rem
+    padding: 4rem
+}
+
+@media (max-width: 991.98px) {
+    .calculator .calcLoan {
+        background-image: none;
+        width: 100%;
+        height: auto;
+        padding: 2rem
+    }
+}
+
+.calculator #calcresults {
+    background: #e4dcc6;
+    max-width: 720px;
+    margin: 1rem auto 0;
+    text-align: center
+}
+
+.calculator #calcresults > div {
+    padding-top: 1rem;
+    padding-bottom: 1rem
 }
 
 .prefooter {
@@ -8000,34 +8039,34 @@ section {
     max-width: 540px
 }
 
-.prefooter > .container .typed {
+.prefooter .typed {
     color: #fff;
     margin: 1.25rem auto 2rem;
     line-height: 1.25
 }
 
-.prefooter > .container form input {
+.prefooter form input {
     text-align: center
 }
 
-.prefooter > .container form input ::-webkit-input-placeholder {
-    font-size: 15px
+.prefooter form input::-webkit-input-placeholder {
+    font-size: 16px
 }
 
-.prefooter > .container form input ::-moz-placeholder {
-    font-size: 15px
+.prefooter form input::-moz-placeholder {
+    font-size: 16px
 }
 
-.prefooter > .container form input :-ms-input-placeholder {
-    font-size: 15px
+.prefooter form input:-ms-input-placeholder {
+    font-size: 16px
 }
 
-.prefooter > .container form input ::-ms-input-placeholder {
-    font-size: 15px
+.prefooter form input::-ms-input-placeholder {
+    font-size: 16px
 }
 
-.prefooter > .container form input ::placeholder {
-    font-size: 15px
+.prefooter form input::placeholder {
+    font-size: 16px
 }
 
 .site-footer {
