@@ -1,7 +1,14 @@
-.main-content {
-  & > .container {
-    max-width: $md;
-    margin: 0 auto;
+main {
+  position: relative;
+  z-index: 500;
+
+  .main-content {
+    & > .container {
+      max-width: $md;
+      margin: 0 auto;
+    }
   }
 }
+
+
 

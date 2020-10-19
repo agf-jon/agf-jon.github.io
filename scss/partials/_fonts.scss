@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'wyg';
+  src: url('../fonts/wyg.eot');
+  src: url('../fonts/wyg.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/wyg.woff') format('woff'),
+  url('../fonts/wyg.ttf') format('truetype'),
+  url('../fonts/wyg.svg#wyg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='icon-'] {
+  vertical-align: middle;
+}
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'wyg';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-read:before {
+  content: '\0041';
+}
+
+.icon-arrow:before {
+  content: '\0042';
+}
+
+.icon-map:before {
+  content: '\0043';
+}
+
+.icon-phone:before {
+  content: '\0044';
+}
