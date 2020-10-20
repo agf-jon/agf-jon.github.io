@@ -101,3 +101,34 @@
   background-image: url('../img/hero-aca.jpg');
   min-height: 0;
 }
+
+.header-article {
+  background-image: url('../img/hero-article.jpg');
+  min-height: 0;
+
+  .masthead {
+    background-color: #fff;
+    background-image: url('../img/masthead-content.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 280px;
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      position: relative;
+      width: 100%;
+      background-image: none;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    .fancy {
+      color: $green;
+      font-size: 36px;
+      line-height: 30px;
+    }
+  }
+}

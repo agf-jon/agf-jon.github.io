@@ -9,6 +9,7 @@ section {
 
   .section-heading {
     text-align: center;
+    margin-bottom: 1.5rem;
 
     & > .container {
       max-width: $md;
@@ -31,7 +32,7 @@ section {
 
 }
 
-.topCta {
+.bar {
   background: $teal;
   color: #fff;
   padding: 2rem 0;
@@ -80,7 +81,6 @@ section {
 }
 
 .intro {
-
   .intro-launchpads {
     padding-top: 1rem;
 
@@ -124,13 +124,11 @@ section {
           margin-right: 0;
         }
       }
-
     }
   }
-
 }
 
-.time2move {
+.cta {
   text-align: center;
   background: $green;
   color: #fff;
@@ -149,7 +147,7 @@ section {
   }
 }
 
-.growKnowledge {
+.resources {
   background-image: url('../img/patterns/dashes.jpg');
   position: relative;
   @include media-breakpoint-down(md) {
@@ -272,7 +270,6 @@ section {
       background-image: url('../img/content-grid-3.jpg');
     }
   }
-
 }
 
 .download {
@@ -309,22 +306,50 @@ section {
   }
 }
 
-.valueAdd {
-  & > .container {
-    max-width: $lg;
+.valueadd {
+  .card {
+    color: inherit;
+    display: block;
+    width: 100%;
+    min-height: 18em;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+
+    &-1 {
+      background-image: url('../img/card-1-bg.jpg');
+    }
+
+    &-2 {
+      background-image: url('../img/card-2-bg.jpg');
+    }
+
+    &-3 {
+      background-image: url('../img/card-3-bg.jpg');
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    img {
+      border-radius: 50%;
+      margin: 2rem auto 2rem;
+      max-width: 8rem;
+      transition: all 0.5s ease;
+
+      &:hover {
+        max-width: 10rem;
+      }
+    }
   }
 }
 
 .calculator {
-  .calc-copy {
-    margin-bottom: 2rem;
-    text-align: center;
-
-    & > .container {
-      max-width: $md;
-    }
-  }
-
   .calcLoan {
     background-image: url('../img/masthead-form.jpg');
     background-size: cover;
