@@ -309,6 +309,12 @@ section {
   }
 }
 
+.valueAdd {
+  & > .container {
+    max-width: $lg;
+  }
+}
+
 .calculator {
   .calc-copy {
     margin-bottom: 2rem;

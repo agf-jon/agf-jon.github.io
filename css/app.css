@@ -4375,6 +4375,10 @@ section .section-heading strong {
     margin: 1rem auto
 }
 
+.valueAdd > .container {
+    max-width: 960px
+}
+
 .calculator .calc-copy {
     margin-bottom: 2rem;
     text-align: center
