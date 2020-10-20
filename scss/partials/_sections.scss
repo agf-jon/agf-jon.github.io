@@ -64,6 +64,11 @@ section {
   }
 
   form {
+    @include media-breakpoint-down(md) {
+      max-width: $md;
+      margin: 0 auto;
+    }
+
     input {
       text-align: center;
 
@@ -154,6 +159,7 @@ section {
   .masthead-border {
     position: absolute;
     top: -2rem;
+    width: 100%;
     @include media-breakpoint-down(md) {
       display: none;
     }
@@ -206,25 +212,66 @@ section {
       grid-template-rows: repeat(3, 1fr);
       margin-top: 0;
     }
-  }
 
-  .content-grid > * {
-    background-color: rgba(111, 41, 97, .4);
-    padding: 2rem;
-  }
+    .grid-item {
+      position: relative;
+      z-index: 10;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      text-decoration: none;
+      padding: 4rem 3rem;
+      cursor: pointer;
+      border: 5px solid $green;
 
-  .one {
-    grid-area: one;
-  }
+      &:before {
+        background-color: rgba(40, 56, 54, 0.6);
+        transition: all 0.5s ease;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1
+      }
 
-  .two {
-    grid-area: two;
-  }
+      &:hover {
+        &:before {
+          background-color: rgba(40, 56, 54, 0.4);
+        }
+      }
 
-  .three {
-    grid-area: three;
-  }
+      .item-content {
+        position: relative;
+        z-index: 50;
+        color: #fff;
 
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .one {
+      grid-area: one;
+      min-height: 35rem;
+      background-image: url('../img/content-grid-1.jpg');
+      @include media-breakpoint-down(md) {
+        min-height: 20rem;
+      }
+    }
+
+    .two {
+      grid-area: two;
+      background-image: url('../img/content-grid-2.jpg');
+    }
+
+    .three {
+      grid-area: three;
+      background-image: url('../img/content-grid-3.jpg');
+    }
+  }
 
 }
 
