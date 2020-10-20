@@ -1,5 +1,5 @@
 section {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 
   @include media-breakpoint-up(md) {
@@ -54,6 +54,7 @@ section {
 .intro {
   .intro-copy {
     text-align: center;
+    margin-bottom: 2rem;
 
     & > .container {
       max-width: $md;
@@ -178,6 +179,7 @@ section {
 
 .calculator {
   .calc-copy {
+    margin-bottom: 2rem;
     text-align: center;
 
     & > .container {
@@ -198,7 +200,7 @@ section {
       background-image: none;
       width: 100%;
       height: auto;
-      padding: 2rem;
+      padding: 2rem 0;
     }
   }
 

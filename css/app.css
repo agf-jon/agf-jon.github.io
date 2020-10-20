@@ -2784,10 +2784,10 @@ textarea.form-control {
     font-size: 1rem;
     line-height: 1.55;
     border-radius: 0;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+    -webkit-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3944,17 +3944,7 @@ main .main-content > .container {
     min-height: 80vh;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    width: 100%;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    width: 100%
 }
 
 .site-header:before {
@@ -3970,21 +3960,46 @@ main .main-content > .container {
 
 .site-header > .container {
     position: relative;
-    z-index: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    z-index: 10
 }
 
 .site-header .brand {
-    margin-bottom: 4em
+    margin-bottom: 2rem;
+    text-align: center
+}
+
+.site-header .brand img {
+    width: 100%;
+    max-width: 250px
+}
+
+.site-header .contact {
+    color: #fff;
+    text-align: center;
+    padding-top: 0.25rem
+}
+
+@media (min-width: 768px) {
+    .site-header .contact {
+        padding-top: 0.5rem;
+        display: block;
+        text-align: right
+    }
+}
+
+.site-header .contact .phone {
+    color: #fff;
+    font-family: mr-eaves-xl-modern, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out
+}
+
+.site-header .contact .phone:hover {
+    background: rgba(255, 255, 255, 0.1)
 }
 
 .site-header .masthead {
@@ -3992,6 +4007,7 @@ main .main-content > .container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 2rem auto;
     padding: 5rem 2.5rem 2rem;
     width: 400px;
     height: 400px;
@@ -4018,7 +4034,7 @@ main .main-content > .container {
 }
 
 section {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem
 }
 
@@ -4089,7 +4105,8 @@ section {
 }
 
 .intro .intro-copy {
-    text-align: center
+    text-align: center;
+    margin-bottom: 2rem
 }
 
 .intro .intro-copy > .container {
@@ -4218,6 +4235,7 @@ section {
 }
 
 .calculator .calc-copy {
+    margin-bottom: 2rem;
     text-align: center
 }
 
@@ -4241,7 +4259,7 @@ section {
         background-image: none;
         width: 100%;
         height: auto;
-        padding: 2rem
+        padding: 2rem 0
     }
 }
 

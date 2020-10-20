@@ -10,10 +10,10 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 
   &:before {
     content: '';
@@ -29,13 +29,45 @@
   & > .container {
     position: relative;
     z-index: 10;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
   }
 
   .brand {
-    margin-bottom: 4em;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+
+  .contact {
+    color: #fff;
+    text-align: center;
+    padding-top: 0.25rem;
+    @include media-breakpoint-up(md) {
+      padding-top: 0.5rem;
+      display: block;
+      text-align: right;
+    }
+
+    .phone {
+      color: #fff;
+      font-family: $font-family-sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      padding: 1rem;
+      text-decoration: none;
+      transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+
+      &:hover {
+        background: rgba(256, 256, 256, 0.1);
+      }
+    }
   }
 
   .masthead {
@@ -43,6 +75,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 2rem auto;
     padding: 5rem 2.5rem 2rem;
     width: 400px;
     height: 400px;
