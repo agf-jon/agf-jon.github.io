@@ -4502,9 +4502,7 @@ section .section-heading strong {
 .prefooter {
     background-color: #6A8C7C;
     color: #fff;
-    text-align: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem
+    text-align: center
 }
 
 .prefooter > .container {
