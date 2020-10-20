@@ -4358,7 +4358,8 @@ section .section-heading strong {
 }
 
 .resources .content-grid .grid-item .item-content p {
-    font-weight: 400
+    font-size: 1rem;
+    font-weight: 200
 }
 
 .resources .content-grid .one {
