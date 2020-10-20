@@ -156,8 +156,11 @@ section {
 
   .masthead-border {
     position: absolute;
-    top: -2rem;
+    top: -1.5rem;
     width: 100%;
+    @include media-breakpoint-down(md) {
+      display: -1.75rem;;
+    }
     @include media-breakpoint-down(md) {
       display: none;
     }
@@ -220,7 +223,8 @@ section {
       text-decoration: none;
       padding: 4rem 3rem;
       cursor: pointer;
-      border: 5px solid $green;
+      border: 2px solid $green;
+      transition: all 0.5s ease;
 
       &:before {
         background-color: rgba(40, 56, 54, 0.6);
@@ -235,6 +239,8 @@ section {
       }
 
       &:hover {
+        transform: scale(1.0125);
+
         &:before {
           background-color: rgba(40, 56, 54, 0.4);
         }
@@ -273,6 +279,7 @@ section {
   }
 }
 
+
 .download {
   padding-top: 0;
   padding-bottom: 0;
@@ -309,17 +316,18 @@ section {
 
 .valueadd {
   .card {
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba(50, 38, 16, 0.1);
     color: inherit;
     display: block;
-    width: 100%;
+    margin-bottom: 1rem;
     min-height: 18em;
-    background-size: cover;
-    text-align: center;
-    text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
 
     &-1 {
       background-image: url('../img/card-1-bg.jpg');
@@ -361,6 +369,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px rgba(50, 38, 16, 0.55);
     width: 720px;
     height: 480px;
     margin: 0 auto;
