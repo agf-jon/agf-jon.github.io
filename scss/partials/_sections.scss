@@ -6,6 +6,29 @@ section {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+
+  .section-heading {
+    text-align: center;
+
+    & > .container {
+      max-width: $md;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    strong {
+      color: $green;
+    }
+
+    @include media-breakpoint-down(md) {
+      br {
+        display: none;
+      }
+    }
+  }
+
 }
 
 .topCta {
@@ -52,31 +75,9 @@ section {
 }
 
 .intro {
-  .intro-copy {
-    text-align: center;
-    margin-bottom: 2rem;
-
-    & > .container {
-      max-width: $md;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-    }
-
-    strong {
-      color: $green;
-    }
-
-    @include media-breakpoint-down(md) {
-      br {
-        display: none;
-      }
-    }
-  }
 
   .intro-launchpads {
-    padding-top: 2em;
+    padding-top: 1rem;
 
     & > .container {
       max-width: $lg;
@@ -128,6 +129,10 @@ section {
   text-align: center;
   background: $green;
   color: #fff;
+  padding-bottom: 8rem;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 2rem;
+  }
 
   & > .container {
     max-width: $sm;
@@ -141,6 +146,86 @@ section {
 
 .growKnowledge {
   background-image: url('../img/patterns/dashes.jpg');
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+
+  .masthead-border {
+    position: absolute;
+    top: -2rem;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .masthead-content {
+    background-color: #fff;
+    background-image: url('../img/masthead-form.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 280px;
+    padding: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    right: 0;
+    @include media-breakpoint-down(md) {
+      position: relative;
+      top: 0;
+      width: 100%;
+      background-image: none;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-areas:
+    "one one two two"
+    "one one two two"
+    "one one three three"
+    "one one three three";
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    margin: 12rem auto 0;
+    @include media-breakpoint-down(md) {
+      grid-template-areas:
+      "one one one one"
+      "two two two two"
+      "three three three three";
+      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin-top: 0;
+    }
+  }
+
+  .content-grid > * {
+    background-color: rgba(111, 41, 97, .4);
+    padding: 2rem;
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+
 }
 
 .download {
