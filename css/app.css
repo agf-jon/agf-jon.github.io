@@ -3589,6 +3589,10 @@ main .main-content img {
     .site-header .masthead .fancy {
         font-size: 70px
     }
+
+    .site-header .masthead .lead {
+        font-size: 1.25rem
+    }
 }
 
 .header-splash {
