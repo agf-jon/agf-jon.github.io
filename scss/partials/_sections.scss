@@ -34,7 +34,7 @@ section {
 .bar {
   background: $teal;
   color: #fff;
-  padding: 2.25rem 0 1.25rem;
+  padding: 2.25rem 0 1.75rem;
   width: 100%;
 
   & > .container {
@@ -55,6 +55,7 @@ section {
     @include media-breakpoint-down(md) {
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      padding: 0;
       text-align: center;
 
       br {
@@ -167,7 +168,7 @@ section {
 
   .masthead-content {
     background-color: #fff;
-    background-image: url('../img/masthead-content.jpg');
+    background-image: url('../img/patterns/frame_1600x690.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,13 +345,14 @@ section {
     }
 
     img {
+      background-color: $green;
       border-radius: 50%;
       margin: 1.5rem auto 1.5rem;
       max-width: 8rem;
       transition: all 0.5s ease;
 
       &:hover {
-        max-width: 10rem;
+        opacity: 0.8;
       }
     }
 
@@ -365,7 +367,7 @@ section {
   background: rgba(211, 199, 164, 0.10);
 
   .calcLoan {
-    background-image: url('../img/masthead-form.jpg');
+    background-image: url('../img/patterns/frame_1440x960.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -400,6 +402,7 @@ section {
   background-color: $teal;
   color: #fff;
   text-align: center;
+  padding-top: 3.5rem;
 
   & > .container {
     max-width: $sm;
