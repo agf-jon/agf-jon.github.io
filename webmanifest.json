@@ -1,6 +1,7 @@
 {
   "short_name": "Wherever You Grow",
   "name": "Wherever You Grow",
+  "display": "standalone",
   "icons": [
     {
       "src": "icon.png",
