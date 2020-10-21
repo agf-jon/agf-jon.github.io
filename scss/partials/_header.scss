@@ -89,6 +89,22 @@
       margin: 1rem auto;
       width: 100%;
     }
+
+    @include media-breakpoint-down(sm) {
+      width: 320px;
+      height: 320px;
+      padding: 3rem 1.5rem 1rem;
+
+      .display {
+        font-size: 50px;
+      }
+
+      .fancy {
+        font-size: 70px;
+      }
+
+
+    }
   }
 }
 

@@ -3575,6 +3575,22 @@ main .main-content img {
     width: 100%
 }
 
+@media (max-width: 767.98px) {
+    .site-header .masthead {
+        width: 320px;
+        height: 320px;
+        padding: 3rem 1.5rem 1rem
+    }
+
+    .site-header .masthead .display {
+        font-size: 50px
+    }
+
+    .site-header .masthead .fancy {
+        font-size: 70px
+    }
+}
+
 .header-splash {
     background-image: url("../img/hero-splash.jpg");
     min-height: 0
