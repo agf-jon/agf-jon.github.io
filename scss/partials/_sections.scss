@@ -151,7 +151,7 @@ section {
   background-image: url('../img/patterns/dashes.jpg');
   position: relative;
   @include media-breakpoint-down(md) {
-    padding-top: 2rem;
+    padding-top: 2rem
   }
 
   .masthead-border {
