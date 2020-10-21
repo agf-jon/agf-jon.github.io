@@ -3640,7 +3640,12 @@ main .main-content img {
         width: 100%;
         background-image: none;
         height: auto;
-        margin-bottom: 2rem
+        margin-bottom: 2rem;
+        padding: 2rem
+    }
+
+    .header-article .masthead h1 {
+        font-size: 2.75rem
     }
 }
 
