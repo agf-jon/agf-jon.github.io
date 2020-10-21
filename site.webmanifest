@@ -1,11 +1,19 @@
 {
   "short_name": "Wherever You Grow",
   "name": "Wherever You Grow",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+    {
+       "src": "splash.png",
+       "type": "image/png",
+       "sizes": "512x512"
+    }
+  ],
   "start_url": "/?utm_source=homepage",
+  "background_color": "#f5f5f5",
   "theme_color": "#3E5330"
 }
