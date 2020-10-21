@@ -8,9 +8,9 @@
       "sizes": "192x192"
     }
     {
-       "src": "splash.png",
-       "type": "image/png",
-       "sizes": "512x512"
+      "src": "splash.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/index.html",
