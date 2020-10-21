@@ -4056,7 +4056,7 @@ main .main-content img {
 
 .header-article .masthead {
     background-color: #fff;
-    background-image: url("../img/masthead-content.jpg");
+    background-image: url("../img/patterns/frame_1600x620.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4299,7 +4299,7 @@ section .section-heading strong {
 
 .resources .masthead-content {
     background-color: #fff;
-    background-image: url("../img/patterns/frame_1600x690.jpg");
+    background-image: url("../img/patterns/frame_1600x620.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4503,7 +4503,7 @@ section .section-heading strong {
 }
 
 .calculator .calcLoan {
-    background-image: url("../img/patterns/frame_1440x960.jpg");
+    background-image: url("../img/patterns/frame_1600x1067.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
