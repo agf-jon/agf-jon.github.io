@@ -3611,6 +3611,12 @@ main .main-content img {
 }
 
 @media (max-width: 991.98px) {
+    .header-article {
+        min-height: 0
+    }
+}
+
+@media (max-width: 991.98px) {
     .header-article > .container {
         padding: 0
     }
@@ -3624,7 +3630,7 @@ main .main-content img {
     background-repeat: no-repeat;
     width: 720px;
     height: 280px;
-    padding: 3rem 6rem;
+    padding: 3rem;
     margin: 0 auto;
     text-align: center;
     position: absolute;
@@ -3646,12 +3652,16 @@ main .main-content img {
 }
 
 .header-article .masthead h1 {
-    font-size: 3.25rem
+    font-size: 3rem
 }
 
 @media (max-width: 991.98px) {
     .header-article .masthead h1 {
-        font-size: 2.75rem
+        font-size: 2.5rem
+    }
+
+    .header-article .masthead h1 br {
+        display: none
     }
 }
 

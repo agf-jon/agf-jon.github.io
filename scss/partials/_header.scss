@@ -121,6 +121,9 @@
 .header-article {
   background-image: url('../img/hero-article.jpg');
   min-height: 25em;
+  @include media-breakpoint-down(md) {
+    min-height: 0;
+  }
 
   & > .container {
     @include media-breakpoint-down(md) {
@@ -136,7 +139,7 @@
     background-repeat: no-repeat;
     width: 720px;
     height: 280px;
-    padding: 3rem 6rem;
+    padding: 3rem;
     margin: 0 auto;
     text-align: center;
     position: absolute;
@@ -154,9 +157,13 @@
     }
 
     h1 {
-      font-size: 3.25rem;
+      font-size: 3rem;
       @include media-breakpoint-down(md) {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
+
+        br {
+          display: none;
+        }
       }
     }
 
