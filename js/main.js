@@ -58,8 +58,7 @@ jQuery('#calcit').click(function(e){
     var finalamt=payment * months;
     finalamt=finalamt - loanamt;
     finalamt=finalamt.toFixed(2);
-    jQuery('#calcresults').html('Amount financed:<h1 class="feature-head"><sup>$</sup>'+numberWithCommas(loanamt)+'</h1>Monthly payment:<h1 class="feature-head"><sup>$</sup>'+numberWithCommas(payment)+'</h1>Total interest:<h1 class="feature-head"><sup>$</sup>'+numberWithCommas(finalamt)+'</h1>');
-});
+    jQuery('#calcresults').html('<div class="row"><div class="col-sm-4">Amount financed:<h4>$</sup>' + numberWithCommas(loanamt) + '</h4></div><div class="col-sm-4">Monthly payment:<h4>$' + numberWithCommas(payment) + '</h4></div><div class="col-sm-4">Total interest:<h4>$' + numberWithCommas(finalamt) + '</h4></div></div>');});
 
 
 // Make the form more user friendly with masking
