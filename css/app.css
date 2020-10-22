@@ -3643,14 +3643,16 @@ main .main-content img {
         margin-bottom: 2rem;
         padding: 2rem
     }
-
-    .header-article .masthead h1 {
-        font-size: 2.75rem
-    }
 }
 
 .header-article .masthead h1 {
     font-size: 3.25rem
+}
+
+@media (max-width: 991.98px) {
+    .header-article .masthead h1 {
+        font-size: 2.75rem
+    }
 }
 
 .header-article .masthead .fancy {
@@ -4144,6 +4146,11 @@ section .section-heading strong {
 
 .prefooter form input::placeholder {
     font-size: 16px
+}
+
+.contactForm {
+    clear: both;
+    overflow: hidden
 }
 
 .site-footer {
