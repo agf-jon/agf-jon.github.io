@@ -58,13 +58,14 @@ jQuery('#calcit').click(function(e){
     var finalamt=payment * months;
     finalamt=finalamt - loanamt;
     finalamt=finalamt.toFixed(2);
-    jQuery('#calcresults').html('<div class="row"><div class="col-sm-4">Amount financed:<h4>$</sup>' + numberWithCommas(loanamt) + '</h4></div><div class="col-sm-4">Monthly payment:<h4>$' + numberWithCommas(payment) + '</h4></div><div class="col-sm-4">Total interest:<h4>$' + numberWithCommas(finalamt) + '</h4></div></div>');});
+    jQuery('#calcresults').html('<div class="row"><div class="col-sm-4">Amount financed:<h4>$</sup>' + numberWithCommas(loanamt) + '</h4></div><div class="col-sm-4">Monthly payment:<h4>$' + numberWithCommas(payment) + '</h4></div><div class="col-sm-4">Total interest:<h4>$' + numberWithCommas(finalamt) + '</h4></div></div>');
+});
 
 
 // Make the form more user friendly with masking
-//$('#pprice').mask('0,000,000', {reverse: true});
-//$('#dpamt').mask('0,000,000', {reverse: true});
-//$('#intrate').mask("0.00", {reverse: true});
+$('#pprice').mask('0,000,000', {reverse: true});
+$('#dpamt').mask('0,000,000', {reverse: true});
+$('#intrate').mask("0.00", {reverse: true});
 
 
 // Zip Code Locator

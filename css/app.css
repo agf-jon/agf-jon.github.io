@@ -4204,7 +4204,9 @@ section .section-heading strong {
 
 .site-footer a, .site-footer p {
     color: #fff;
-    font-weight: 400
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1rem
 }
 
 .site-footer .brand {
@@ -4231,16 +4233,17 @@ section .section-heading strong {
 
 .site-footer .legal img, .site-footer .legal .legal-links {
     display: block;
-    line-height: 1.4;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem
 }
 
 @media (min-width: 768px) {
     .site-footer .legal img, .site-footer .legal .legal-links {
         display: inline-block;
-        margin-left: 1rem;
-        margin-right: 1rem
+        margin-left: 0.5rem;
+        margin-right: 0.5rem
     }
 }
 
