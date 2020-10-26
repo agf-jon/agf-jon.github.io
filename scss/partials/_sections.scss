@@ -156,11 +156,9 @@ section {
 
   .masthead-border {
     position: absolute;
-    top: -1.5rem;
+    top: -2rem;
     width: 100%;
-    @include media-breakpoint-down(md) {
-      display: -1.75rem;;
-    }
+
     @include media-breakpoint-down(md) {
       display: none;
     }
