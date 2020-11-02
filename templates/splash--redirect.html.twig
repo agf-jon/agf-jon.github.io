@@ -1,0 +1,95 @@
+{% extends template_directory ~ '/base.html.twig' %}
+
+{% block top_head %}
+  <!-- REDIRECTING STARTS -->
+  <link rel="canonical" href="https://farmcredit.com/locations"/>
+  <noscript>
+    <meta http-equiv="refresh" content="8;URL=https://farmcredit.com/locations">
+  </noscript>
+  <!--[if lt IE 9]><script type="text/javascript">var IE_fix=true;</script><![endif]-->
+  <script type="text/javascript">
+    var url = "https://farmcredit.com/locations?utm_source=agfirst&utm_medium=website&utm_campaign=wherever_you_grow";
+    var delay = "8000";
+    window.onload = function ()
+    {
+      setTimeout(GoToURL, delay);
+    }
+    function GoToURL()
+    {
+      if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
+      {
+        var referLink = document.createElement("a");
+        referLink.href = url;
+        document.body.appendChild(referLink);
+        referLink.click();
+      }
+      else { window.location.replace(url); } // All other browsers
+    }
+  </script>
+{% endblock %}
+
+{% block page_title %}Out of Territory | Wherever You Grow {% endblock %}
+
+{% block header %}
+  <!--Site Header-->
+  <header class="site-header {% block header_class %}header-page{% endblock %}">
+    <div class="container">
+      <div class="brand">
+        <img src="img/logos/fc.svg" height="60" alt="logo">
+      </div>
+      {% block masthead %}
+        <div class="masthead">
+          <p class="fancy">you're being redirected</p>
+          <h1>It Looks Like You're Out of Our Territory</h1>
+          <p>We're redirecting you to a tool that can help you find a Farm Credit branch in your area.</p>
+        </div>
+      {% endblock %}
+    </div>
+  </header>
+{% endblock %}
+
+{% block main %}
+  <main class="site-main">
+    <a id="main-content" tabindex="-1"></a>
+    <section class="main-content">
+      <div class="container">
+        <p class="lead text-center">Please wait while you are redirected.</p>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+
+{% block footer %}
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-top">
+        <div class="col-md-5">
+          <div class="brand">
+            <img src="img/logos/fc.svg" height="60" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="legal">
+            <p class="legal-links"><a target="_blank" href="https://www.agfirst.com/privacy-policy.aspx">Privacy</a> | <a target="_blank" href="https://www.agfirst.com/ccpa.aspx">CCPA</a> | <a target="_blank" href="https://www.agfirst.com/disclosures.aspx">Disclosures</a>
+            </p>
+            <img src="img/logos/ehl.svg" width="50" alt="logo">
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col-md-5">
+          <div class="address">
+            <p>AgFirst Farm Credit Bank<br>
+              1901 Main Street, Columbia, SC 29201</p>
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="copyright">
+            <p>Copyright © 2020 AgFirst Farm Credit Bank.<br>
+              All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

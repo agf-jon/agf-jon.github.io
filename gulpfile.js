@@ -6,6 +6,8 @@ var sass            = require('gulp-sass');
 var autoprefixer    = require('gulp-autoprefixer');
 var sourcemaps      = require('gulp-sourcemaps');
 var dateTime        = require('node-datetime');
+var minify          = require('gulp-minify');
+var cleanCSS        = require('gulp-clean-css');
 
 // pass in siteUrl to create a unique instance for multiple instances.
 var browsersync     = require('browser-sync').create(siteUrl);
@@ -60,17 +62,25 @@ var config = {
 gulp.task('sass', function () {
   return gulp.src('scss/**/*.scss')
     .pipe(plumber())
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(sass(config.sass).on('error', config.sassError))
     .pipe(autoprefixer(config.autoprefixer))
-    .pipe(sourcemaps.write('./'))
+    //.pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('css'))
-    .pipe(browsersync.stream({match: '**/*.css'})); // this line injects style.css
+    .pipe(browsersync.stream({match: '**/*.css'}))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('css'));
 });
 
 // sass watch task
 gulp.task('watch', function () {
   gulp.watch('scss/**/*.scss', ['sass']);
+});
+
+gulp.task('compress', function() {
+  gulp.src(['js/*.js'])
+    .pipe(minify())
+    .pipe(gulp.dest('js'));
 });
 
 
@@ -98,7 +108,7 @@ gulp.task('default', function () {
       gulp.start('sass');
     }
   });
-  
+
   // reload on file changes for BS watch list set in config.
   browsersync.watch(
     config.browsersync.watch, function (event, file) {

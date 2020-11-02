@@ -1,0 +1,181 @@
+{% extends template_directory ~ '/base.html.twig' %}
+
+{% block header %}
+  <header class="site-header {% block header_class %}header-splash{% endblock %}">
+    <div class="container">
+      <div class="brand">
+        <img src="img/logos/fc.svg" height="60" alt="logo">
+      </div>
+      {% block masthead %}
+      <div class="masthead">
+        <h1 class="display"><span class="fancy">wherever</span><br>you grow</h1>
+        <p class="typed"><span id="typed"></span></p>
+        <img src="img/patterns/rope-small.png" class="img-fluid" alt="" width="250">
+        <p class="lead">You have a partner in Farm Credit</p>
+      </div>
+      {% endblock %}
+    </div>
+  </header>
+{% endblock %}
+
+{% block main %}
+  <main class="site-main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="getHelp">GET HELP MOVING<br> TO THE COUNTRY</p>
+          </div>
+          <div class="col-lg-8">
+            <form id="zipLookupTop" class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="zipTop" class="sr-only">Top Zip Code Search</label>
+                  <input type="text" class="form-control" id="zipTop" name="zipTop"
+                         placeholder="ENTER YOUR ZIP CODE"
+                         data-mask="00000" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <button type="submit" class="btn btn-block btn-outline-light"><span class="icon-map"></span>
+                  Get Started
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <section class="intro">
+      <div class="section-heading">
+        <div class="container">
+          <h2>Ready to social distance for the long haul? <br>Get the financing to make it possible.</h2>
+          <p class="lead">Do the cities and suburbs have you feeling crowded in and stressed out? With the chaos
+            and unpredictability of today’s world, there’s never been a better time to carve out your own slice
+            of country paradise. Wherever you grow, no matter the situation, Farm Credit is here to support
+            you.</p>
+        </div>
+      </div>
+      <div class="intro-launchpads">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="launchpad-item">
+                <img class="launchpad-img" src="img/launchpad-1-buy.jpg" width="96" height="96" alt="">
+                <h3 class="launchpad-title">Buy Your Dream Home</h3>
+                <p class="launchpad-content">Lay down roots in the country by purchasing your perfect rural
+                  home.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="launchpad-item">
+                <img class="launchpad-img" src="img/launchpad-2-build.jpg" width="96" height="96" alt="">
+                <h3 class="launchpad-title">Build Your Forever Home</h3>
+                <p class="launchpad-content">Watch your dream of country living come to life with the
+                  construction of your new home.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="launchpad-item">
+                <img class="launchpad-img" src="img/launchpad-3-land.jpg" width="96" height="96" alt="">
+                <h3 class="launchpad-title">Land on a Few Acres</h3>
+                <p class="launchpad-content">Wide open spaces are calling. Buy land today and
+                  start planning for tomorrow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h2 class="typed">time to move?</h2>
+        <p><a href="/#resources" class="btn btn-block btn-outline-light js-scroll-trigger">Get the Info You Need</a></p>
+      </div>
+    </section>
+    <section class="resources">
+      <img class="masthead-border" src="img/patterns/rope-large.png" alt="">
+      <div class="masthead-content">
+        <h2>Grow your knowledge.</h2>
+        <p class="lead">Check out these resources to learn more about country land and home purchases, including a
+          how-to guide on beginning your search, land buying tips and mistakes to avoid. If you’re ready to talk
+          to a rural lending expert, reach out to your local office to learn more.</p>
+      </div>
+      <div id="resources" class="container">
+        <div class="content-grid">
+          <a target="_blank" href="/campaign/article-1" class="grid-item one">
+            <div class="item-content">
+              <h3 class="h2">Tips for landing the right property</h3>
+              <p>9 minute read</p>
+            </div>
+          </a>
+          <a target="_blank" href="/campaign/article-2" class="grid-item two">
+            <div class="item-content">
+              <h3>How to begin your search for a country home</h3>
+              <p>8 minute read</p>
+            </div>
+          </a>
+          <a target="_blank" href="/campaign/article-3" class="grid-item three">
+            <div class="item-content">
+              <h3>Five mistakes to avoid when buying rural property</h3>
+              <p>11 minute read</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="prefooter" id="prefooter">
+      <div class="container">
+        <h2 class="display"><span class="fancy">wherever</span><br>you grow</h2>
+        <p class="typed">Farm Credit has the tools to help you cultivate your dreams.</p>
+        <form id="zipLookupBottom">
+          <div class="form-group">
+            <label for="zipBottom" class="sr-only">Bottom Zip Code Search</label>
+            <input type="text" class="form-control" id="zipBottom" name="zipBottom"
+                   placeholder="ENTER YOUR ZIP CODE"
+                   data-mask="00000" required>
+          </div>
+          <button type="submit" class="btn btn-block btn-outline-light"><span class="icon-map"></span> Find A Local Partner
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+
+{% block footer %}
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-top">
+        <div class="col-md-5">
+          <div class="brand">
+            <img src="img/logos/fc.svg" height="60" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="legal">
+            <p class="legal-links"><a target="_blank" href="https://www.agfirst.com/privacy-policy.aspx">Privacy</a> | <a target="_blank" href="https://www.agfirst.com/ccpa.aspx">CCPA</a> | <a target="_blank" href="https://www.agfirst.com/disclosures.aspx">Disclosures</a>
+            </p>
+            <img src="img/logos/ehl.svg" width="50" alt="logo">
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col-md-5">
+          <div class="address">
+            <p>AgFirst Farm Credit Bank<br>
+              1901 Main Street, Columbia, SC 29201</p>
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="copyright">
+            <p>Copyright © 2020 AgFirst Farm Credit Bank.<br>
+              All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

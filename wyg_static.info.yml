@@ -1,0 +1,5 @@
+name: Wherever You Grow Static Content
+type: module
+description: 'Fully static page templates for Wherever You Grow'
+package: 'AgFirst'
+core: '8.x'

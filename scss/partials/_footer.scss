@@ -9,7 +9,7 @@
   padding-bottom: 4rem;
   position: relative;
   text-align: center;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     text-align: left;
   }
 
@@ -42,7 +42,6 @@
     margin-bottom: 1.5rem;
 
     img {
-      width: 100%;
       max-width: 15rem;
       margin: 0 auto;
     }

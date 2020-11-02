@@ -5,6 +5,7 @@ body {
     font-size: 1.125em;
     line-height: 1.65;
   }
+
 }
 
 a {
@@ -63,11 +64,16 @@ h1, h2, h3, h4, h5 {
 
 /* Other Elements */
 blockquote {
-  border-left: 0.3rem solid lighten($tan, 15%);
   font-family: $font-family-serif;
-  font-size: 1.25em;
+  font-size: 1.375rem;
   font-weight: 400;
   color: $grey;
   margin: 0 auto 1.5rem;
-  padding: 0 0 0 1.5rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.425rem;
+    margin: 1.5rem auto;
+    border-left: .3rem solid #ece7d8;
+    padding: 0 0 0 1.5rem;
+  }
 }

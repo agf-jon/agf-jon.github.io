@@ -1,0 +1,84 @@
+wyg_static.splash:
+  path: '/campaign'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::splash'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.splash_redirect:
+  path: '/campaign/redirect'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::splashRedirect'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.aca:
+  path: '/campaign/{name}'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::aca'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.contact:
+  path: '/campaign/{name}/contact'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::contact'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.thanks_contact:
+  path: '/campaign/{name}/thanks-contact'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::thanksContact'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.thanks_download:
+  path: '/campaign/{name}/thanks-download'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::thanksDownload'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.splash_article1:
+  path: '/campaign/article-1'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::splashArticle1'
+  requirements:
+    _access: 'TRUE'
+
+
+wyg_static.aca_article1:
+  path: '/campaign/{name}/article-1'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::acaArticle1'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.splash_article2:
+  path: '/campaign/article-2'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::splashArticle2'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.aca_article2:
+  path: '/campaign/{name}/article-2'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::acaArticle2'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.splash_article3:
+  path: '/campaign/article-3'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::splashArticle3'
+  requirements:
+    _access: 'TRUE'
+
+wyg_static.aca_article3:
+  path: '/campaign/{name}/article-3'
+  defaults:
+    _controller: 'Drupal\wyg_static\Controller\StaticController::acaArticle3'
+  requirements:
+    _access: 'TRUE'

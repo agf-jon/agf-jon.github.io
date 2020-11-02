@@ -1,9 +1,14 @@
 section {
   padding-top: 3rem;
-  padding-bottom: 1.75rem;
+  padding-bottom: 2rem;
 
   @include media-breakpoint-up(md) {
-    padding-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 5rem;
     padding-bottom: 4rem;
   }
 
@@ -65,9 +70,11 @@ section {
   }
 
   form {
+    margin-bottom: 0;
     @include media-breakpoint-down(md) {
       max-width: $md;
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     input {
@@ -132,8 +139,10 @@ section {
   text-align: center;
   background: $green;
   color: #fff;
+  padding-top: 4rem;
   padding-bottom: 8rem;
   @include media-breakpoint-down(md) {
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -166,7 +175,7 @@ section {
 
   .masthead-content {
     background-color: #fff;
-    background-image: url('../img/patterns/frame_1600x620.jpg');
+    background-image: url('../img/patterns/frame_720x280.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -295,7 +304,7 @@ section {
   .download-form {
     padding: 3rem 2rem 2rem;
     @include media-breakpoint-up(lg) {
-      padding: 6rem 6rem 3rem
+      padding: 4rem 5rem 4rem
     }
 
     form {
@@ -365,7 +374,7 @@ section {
   background: rgba(211, 199, 164, 0.10);
 
   .calcLoan {
-    background-image: url('../img/patterns/frame_1600x1067.jpg');
+    background-image: url('../img/patterns/frame_720x480.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -426,4 +435,12 @@ section {
 .contactForm {
   clear: both;
   overflow: hidden;
+  display: block;
+  .clickdform.mainDiv,
+  #clickdimensionsForm {
+    height: auto;
+    .clear {
+      display: none;
+    }
+  }
 }

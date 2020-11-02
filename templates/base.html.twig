@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us" class="{% block html_class %}{% endblock %}">
+<head>
+    {% block top_head %}{% endblock %}
+    <base href="/modules/custom/wyg_static/">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" href="css/app.css" as="style">
+    <meta charset="utf-8">
+    <title>{% block page_title %}Wherever You Grow | Farm Credit{% endblock %}</title>
+    <meta name="description" content="Farm Credit is here to help.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4285f4">
+    <link rel="manifest" href="webmanifest.json">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="/modules/custom/wyg_static/favicon.ico">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDFW7VP');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDFW7VP"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a href="#main-content" class="sr-only focusable">
+    Skip to main content
+</a>
+{% block header %}
+  <header class="site-header {% block header_class %}header-aca{% endblock %}">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <div class="brand">
+            <img src="{{ logo }}" height="60" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-3">
+          <div class="contact">
+            <a class="phone" href="tel:+{{ mobile_phone }}"><span class="icon-phone"></span> {{ phone }}</a>
+          </div>
+        </div>
+      </div>
+      {% block masthead %}
+      <div class="masthead">
+        <h1 class="display"><span class="fancy">wherever</span><br>you grow</h1>
+        <p class="typed"><span id="typed"></span></p>
+        <img src="img/patterns/rope-small.png" class="img-fluid" width="250" alt="">
+        <p class="lead">You have a partner in Farm Credit</p>
+      </div>
+      {% endblock %}
+    </div>
+  </header>
+{% endblock %}
+
+{% block main %}
+  <main class="site-main">
+    <a id="main-content" tabindex="-1"></a>
+    <section class="main-content">
+      <div class="container">
+        <div class="contactForm">
+          <script type="text/javascript">var loc = "https://analytics.clickdimensions.com/agfirstcom-asvkl/pages/";</script>
+          <script type="text/javascript" src="https://az124611.vo.msecnd.net/web/v10/CDWidget.js"></script>
+          <div pageID="41f2lxrneeubfgbqvqmudq"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+
+{% block footer %}
+  <footer class="site-footer">
+      <div class="container">
+          <div class="row footer-top">
+              <div class="col-md-5">
+                  <div class="brand">
+                      <img src="{{ logo }}" height="60" alt="logo">
+                  </div>
+              </div>
+              <div class="col-md-5 offset-md-2">
+                  <div class="legal">
+                      <p class="legal-links"><a target="_blank" href="{{ legal.privacy }}">Privacy</a> | <a target="_blank" href="{{ legal.ccpa }}">CCPA</a> | <a target="_blank" href="{{ legal.disclosures }}">Disclosures</a>
+                      </p>
+                      <img src="img/logos/ehl.svg" width="50" alt="logo">
+                  </div>
+              </div>
+          </div>
+          <div class="row footer-bottom">
+              <div class="col-md-5">
+                  <div class="address">
+                      <p>{{ display_name }}<br>
+                        {{ address.street }}, {{ address.city }}, {{ address.state }}&nbsp;{{ address.zip }}</p>
+                  </div>
+              </div>
+              <div class="col-md-5 offset-md-2">
+                  <div class="copyright">
+                      <p>Copyright © 2020 {{ display_name }}.<br>
+                          All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+{% endblock %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="js/plugins-min.js"></script>
+<script src="js/main-min.js"></script>
+</body>
+</html>

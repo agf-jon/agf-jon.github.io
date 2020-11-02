@@ -1,22 +1,11 @@
 @import url('https://use.typekit.net/bpa2qwb.css');
-
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-
-// Custom Variables & Mixins (so we can update bootstrap without overwriting customizations)
+// Bootstrap Custom Variables & Mixins (so we can update bootstrap without overwriting customizations)
 @import "modules/bs-functions";
 @import "modules/bs-variables";
 @import "modules/bs-mixins";
-
-// Global variables and mixins
-@import "partials/custom-variables";
-@import "partials/custom-mixins";
-
-// Bootstrap components
+// Local Custom Global Variables and Mixins
+@import "modules/custom-variables";
+// Bootstrap Components
 @import "vendor/bootstrap/root";
 @import "vendor/bootstrap/reboot";
 @import "vendor/bootstrap/type";
@@ -27,11 +16,9 @@
 @import "vendor/bootstrap/input-group";
 @import "vendor/bootstrap/media";
 @import "vendor/bootstrap/print";
-
 // Overrides
-@import "partials/bs-overrides";
-
-// Global Partials
+@import "modules/bs-overrides";
+// Site Partials
 @import "partials/base";
 @import "partials/typography";
 @import "partials/content";

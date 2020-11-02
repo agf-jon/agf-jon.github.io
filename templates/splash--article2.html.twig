@@ -1,0 +1,114 @@
+{% extends template_directory ~ '/base.html.twig' %}
+
+{% block page_title %}How to Begin Your Search for a Country Home | Farm Credit {% endblock %}
+
+{% block header %}
+  <header class="site-header {% block header_class %}header-page page-article-2{% endblock %}">
+    <div class="container">
+      <div class="brand">
+        <img src="img/logos/fc.svg" height="60" alt="logo">
+      </div>
+      {% block masthead %}
+        <div class="masthead">
+          <p class="fancy">exclusive article</p>
+          <h1>How to Begin Your Search for a Country Home</h1>
+          <p class="lead">9 minute read</p>
+        </div>
+      {% endblock %}
+    </div>
+  </header>
+{% endblock %}
+
+{% block main %}
+  <main class="site-main">
+    <a id="main-content" tabindex="-1"></a>
+    <section class="main-content">
+      <div class="container">
+        <blockquote><p>Have you been thinking of trading in skyscrapers and nosy neighbors for the peace and quiet
+            of your own country acres? Are you struggling with where to start? Good news! Our guide will give you
+            some action steps you can take now to prepare for the future you want tomorrow.
+            It’s helpful to set some parameters around where you are looking to grow and why before getting in touch
+            with a real estate agent and lender. Use this checklist to get the conversation started:
+          </p></blockquote>
+        <h2 class="h4 text-center" style="margin-bottom:1.25rem">Take action today to prepare for country living
+          tomorrow:</h2>
+        <p class="text-center"><a class="btn btn-primary" href="/pdf/FarmCredit-WYG-GetStartedDownload.pdf" target="_blank">Download
+            The Fillable Guide</a></p>
+      </div>
+    </section>
+    <section class="valueadd" style="padding-top:0;">
+      <div class="section-heading">
+        <div class="container">
+          <h2>Like this article?</h2>
+          <p class="lead">You might find these helpful, too:</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <a target="_blank" href="/campaign/article-1" class="card card-1">
+              <img src="img/card-1-fg.jpg" alt="">
+              <h3>Tips for landing the right property</h3>
+              <p>8 minute read</p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a target="_blank" href="/campaign/article-3" class="card card-3">
+              <img src="img/card-3-fg.jpg" alt="">
+              <h3>5 mistakes to avoid when buying rural property</h3>
+              <p>11 minute read</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prefooter" id="prefooter">
+      <div class="container">
+        <h2 class="display"><span class="fancy">wherever</span><br>you grow</h2>
+        <p class="typed">Farm Credit has the tools to help you cultivate your dreams.</p>
+        <form id="zipLookupBottom">
+          <div class="form-group">
+            <label for="zipBottom" class="sr-only">Zip Code Search</label>
+            <input type="text" class="form-control" id="zipBottom" name="zipBottom" placeholder="ENTER YOUR ZIP CODE" data-mask="00000" required="" autocomplete="off" maxlength="5">
+          </div>
+          <button type="submit" class="btn btn-block btn-outline-light"><span class="icon-map"></span> Find a Local Partner
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+{% endblock %}
+{% block footer %}
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row footer-top">
+        <div class="col-md-5">
+          <div class="brand">
+            <img src="img/logos/fc.svg" height="60" alt="logo">
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="legal">
+            <p class="legal-links"><a target="_blank" href="https://www.agfirst.com/privacy-policy.aspx">Privacy</a> | <a target="_blank" href="https://www.agfirst.com/ccpa.aspx">CCPA</a> | <a target="_blank" href="https://www.agfirst.com/disclosures.aspx">Disclosures</a>
+            </p>
+            <img src="img/logos/ehl.svg" width="50" alt="logo">
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col-md-5">
+          <div class="address">
+            <p>AgFirst Farm Credit Bank<br>
+              1901 Main Street, Columbia, SC 29201</p>
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div class="copyright">
+            <p>Copyright © 2020 AgFirst Farm Credit Bank.<br>
+              All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

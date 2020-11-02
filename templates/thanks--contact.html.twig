@@ -1,0 +1,53 @@
+{% extends template_directory ~ '/base.html.twig' %}
+
+{% block page_title %}Thank You | {{ display_name }} {% endblock %}
+
+{% block header_class %}header-page{% endblock %}
+
+{% block masthead %}
+  <div class="masthead">
+    <p class="fancy">thank you</p>
+    <h1>We've Received Your Inquiry</h1>
+    <p class="lead">Thank you for reaching out to {{ display_name }}. We’re now reviewing your information and will be
+      in touch with you soon.</p>
+  </div>
+{% endblock %}
+
+{% block main %}
+  <main class="site-main">
+    <a id="main-content" tabindex="-1"></a>
+    <section class="valueadd">
+      <div class="section-heading">
+        <div class="container">
+          <h2>In the meantime...</h2>
+          <p class="lead">Use these exclusive articles to help guide your move to the country.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a target="_blank" href="/campaign/{{ association_key }}/article-1" class="card card-1">
+              <img src="img/card-1-fg.jpg" alt="">
+              <h3>Tips for landing the right property</h3>
+              <p>8 minute read</p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a target="_blank" href="/campaign/{{ association_key }}/article-2" class="card card-2">
+              <img src="img/card-2-fg.jpg" alt="">
+              <h3>How to begin your search for a country home</h3>
+              <p>9 minute read</p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a target="_blank" href="/campaign/{{ association_key }}/article-3" class="card card-3">
+              <img src="img/card-3-fg.jpg" alt="">
+              <h3>5 mistakes to avoid when buying rural property</h3>
+              <p>11 minute read</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

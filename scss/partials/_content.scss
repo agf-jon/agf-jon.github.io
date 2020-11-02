@@ -20,5 +20,15 @@ main {
   }
 }
 
+.main-content {
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 22px;
+    line-height: 1.55
+  }
+}
+
 
 
